@@ -54,6 +54,13 @@ book:
     - part: "Session 4: Money over time"
       chapters:
         - session-4/index.qmd
+        - session-4/interest.qmd
+        - session-4/present-value.qmd
+        - session-4/annuities.qmd
+        - session-4/depreciation.qmd
+        - session-4/your-business.qmd
+        - session-4/practice.qmd
+        - session-4/catch-up.qmd
     - references.qmd
   appendices:
     - appendices/formula-sheet.qmd

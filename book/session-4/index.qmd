@@ -1,12 +1,43 @@
 # Overview of Session 4 {#sec-s4}
 
-::: {.callout-important appearance="simple"}
-## Coming soon
-This session's chapters are being written. The plan is below.
+Every business decision so far happened at one moment: one month's costs, one price. Real decisions stretch over years. A loan is paid back over four years, a machine is used for five, a customer pays in thirty days. A euro today and a euro in three years are not the same thing, and this session gives you the tools to compare them. It is also the session where everything from the block comes together: percentages and growth factors (Session 1), solving equations (Session 2), and exponential functions and logarithms (Session 3).
+
+::: {.goals}
+Goals
+
+After this session you can:
+
+- calculate simple and compound interest, and compare offers with different compounding periods using the effective annual rate;
+- move money through time: future value, present value and net present value;
+- use the geometric series to value savings plans and regular payments;
+- calculate the instalment of a loan, write a repayment schedule and find the remaining debt;
+- compare straight-line and declining-balance depreciation;
+- decide whether to lease or buy, and whether an investment pays off.
 :::
 
-**Theme:** Money over time. Finance your first equipment: compare loans, plan repayments, decide whether to lease or buy.
+## Before class
 
-**Planned chapters:** simple and compound interest; future and present value; effective annual rate; geometric series; linear and declining-balance depreciation; loans repaid in equal instalments; your business: financing; practice; catch-up sheet.
+- [ ] Work through the chapters of this session: @sec-interest to @sec-depreciation (about 80 minutes, videos included).
+- [ ] Try the questions in @sec-s4-practice (about 20 minutes).
+- [ ] Take **Entry quiz 4** on Moodle before the deadline.
 
-**Further reading (optional):** @olivier2023, sec. 9.1–9.3, pp. 337–366, and sec. 11.1–11.4, pp. 443–483; also @olivier2023, sec. 13.3, pp. 576–585, and sec. 15.1, pp. 654–666 and @mazur2021, ch. 9, pp. 841–926. In German: @gundlach2024, ch. 9, pp. 141–164 or @cramer2015, ch. 4, pp. 53–69.
+**If you want more explanation or practice** (optional), the same topics are covered in @olivier2023, sec. 9.1–9.3, pp. 337–366, and sec. 11.1–11.4, pp. 443–483; also @olivier2023, sec. 13.3, pp. 576–585, and sec. 15.1, pp. 654–666 and @mazur2021, ch. 9, pp. 841–926. In German: @gundlach2024, ch. 9, pp. 141–164 or @cramer2015, ch. 4, pp. 53–69.
+
+## In class
+
+| Time | What happens |
+|-------------|------------------------------------------------------------|
+| 0:00–0:20   | The quiz questions most people found hard |
+| 0:20–1:20   | Problem set A in your group: interest, effective rates, present value of your plans |
+| 1:20–1:35   | Break |
+| 1:35–2:35   | Problem set B: finance your equipment. Loan schedule, lease or buy, depreciation |
+| 2:35–3:00   | Tool moment (@sec-s4-business), groups present, a look back at the whole block |
+
+Could not prepare? Start with the [catch-up sheet](catch-up.qmd) and join your group for problem set B.
+
+## Videos in this session
+
+1. Simple and compound interest, effective rate (@sec-interest)
+2. Present value and net present value (@sec-present-value)
+3. Savings plans and loans: the annuity formula (@sec-annuities)
+4. Depreciation (@sec-depreciation)

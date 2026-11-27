@@ -41,3 +41,13 @@ Useful if you read the German books or meet these terms in German-speaking compa
 | Barwert, Endwert | Present value, future value |
 | Abschreibung (linear, degressiv) | Depreciation (straight-line, declining-balance) |
 | Annuität, Tilgung, Restschuld | Annuity (instalment), repayment, outstanding balance |
+| Kapital, Zinssatz, Zinsfaktor | Principal, interest rate, interest factor |
+| Aufzinsen, Abzinsen | Compounding, discounting |
+| Nominalzins, effektiver Jahreszins | Nominal rate, effective annual rate |
+| Skonto | Early-payment (cash) discount |
+| Kapitalwert, interner Zinsfuß | Net present value, internal rate of return |
+| Rentenbarwertfaktor | Present value factor of an annuity |
+| Sparplan, Rate | Savings plan, (regular) payment |
+| Annuitätendarlehen, Tilgungsplan | Annuity loan, repayment schedule |
+| Buchwert, Nutzungsdauer | Book value, useful life |
+| Leasing, Kauf | Lease, buy |

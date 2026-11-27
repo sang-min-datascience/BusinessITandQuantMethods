@@ -1,0 +1,107 @@
+# Your business: financing your equipment {#sec-s4-business}
+
+Your business now has a price, a break-even volume and a profit function. In this last step, it needs equipment, and the money to pay for it. You decide how to finance it, and whether the investment pays off at all.
+
+::: {.business}
+Your business, step 4
+
+**Before class (as a group, 15 minutes):**
+
+1. Decide on one larger piece of equipment your business needs (a machine, a vehicle, laptops, a shop fit-out). Look up a realistic price.
+2. Estimate how much extra cash per year it brings in or saves, for how many years, and what it might be worth at the end.
+
+**In class (problem set A):**
+
+3. Find two loan offers online, or invent two realistic ones: one with monthly and one with yearly interest. Compare their effective annual rates.
+4. Calculate the net present value of the equipment at a discount rate of your choice. Does it pay off? At which rate does it stop paying off?
+
+**In class (problem set B):**
+
+5. Finance the equipment with an annuity loan. Calculate the instalment and build the full repayment schedule in a spreadsheet.
+6. A leasing company offers the same equipment. Set a realistic yearly lease payment and decide: lease or buy?
+7. Write down the depreciation for the first three years with both methods. Which one fits your equipment better, and why?
+:::
+
+## Tool moment: lease or buy?
+
+Loop Cycles needs the workshop equipment from @sec-present-value. It has two options:
+
+- **Buy** for €12,000 today. After 4 years, sell it for €2,000.
+- **Lease** for €3,200 at the end of each year for 4 years. Then give it back.
+
+Money costs Loop Cycles 5 % a year. To compare, bring every payment to today. Costs are positive here, and the resale price is negative, because it reduces the cost.
+
+```{.sheet title="Lease or buy? The present value of the costs of each option. The rate is in B1." highlight="B10 C10" header="false"}
+Rate | 5% |
+ | |
+Year | Buy | Lease
+0 | 12000 | 0
+1 | 0 | 3200
+2 | 0 | 3200
+3 | 0 | 3200
+4 | -2000 | 3200
+ | |
+PV of costs | =B4+NPV(B1,B5:B8) -> 10,354.60 | =C4+NPV(B1,C5:C8) -> 11,347.04
+```
+
+In today's money, buying costs €10,354.60 and leasing €11,347.04, so buying is about €990 cheaper. If Loop Cycles has to borrow the €12,000 at 5 %, the answer stays the same: the present value of the loan instalments at 5 % is exactly €12,000.
+
+The calculation is the start of the decision, not the end. Leasing can still be the better choice if the lease includes maintenance or repairs, if Loop Cycles cannot get a loan, or if it wants to keep its cash for a busy season. Good decisions combine the numbers with these questions, and the numbers tell you how much the other advantages must be worth: here, about €990 in today's money.
+
+::: {.voice}
+In my voluntary work I do a lot of project calculations in spreadsheets, and they almost always have the shape of this one: the assumptions at the top, one row per year, one formula filled down, and the decision at the bottom. Build your table this way, and anyone can check it and change an assumption without breaking it.
+:::
+
+## Tool moment: does the loop match the formula?
+
+A good habit with money calculations is to work them out in **two independent ways**. If the annuity formula and a year-by-year loop agree, you can trust both. Here is the check for the equipment loan of @tbl-schedule.
+
+::: {.panel-tabset group="language"}
+## R
+```r
+K0 <- 12000; i <- 0.05; n <- 4; q <- 1 + i
+A <- K0 * i * q^n / (q^n - 1)        # the annuity formula: 3384.142
+
+balance <- K0
+for (year in 1:n) balance <- balance * q - A   # the loop
+balance                              # about 0 (a tiny rounding error such as 1.1e-11)
+
+# lease or buy: present value of costs
+pv <- function(cf, rate) sum(cf / (1 + rate)^(seq_along(cf) - 1))
+pv(c(12000, 0, 0, 0, -2000), 0.05)   # 10354.6
+pv(c(0, 3200, 3200, 3200, 3200), 0.05)  # 11347.04
+```
+## Python
+```python
+K0, i, n = 12000, 0.05, 4
+q = 1 + i
+A = K0 * i * q**n / (q**n - 1)       # the annuity formula: 3384.14...
+
+balance = K0
+for year in range(n):
+    balance = balance * q - A        # the loop
+print(balance)                       # about 0 (a tiny rounding error)
+
+# lease or buy: present value of costs
+def pv(cf, rate):
+    return sum(c / (1 + rate)**t for t, c in enumerate(cf))
+print(pv([12000, 0, 0, 0, -2000], 0.05))      # 10354.595050416236
+print(pv([0, 3200, 3200, 3200, 3200], 0.05))  # 11347.041613319552
+```
+:::
+
+## Looking back at the block
+
+This session used almost everything from the previous three. Here is where each tool came back:
+
+| Session | Tool | Where it appeared in Session 4 |
+|----------|-----------------------|------------------------------------------------|
+| 1 | Growth factor $1 + p$ | Interest factor $q = 1 + i$ |
+| 1 | Powers and roots | $q^n$, and the rate from $\left(\frac{K_n}{K_0}\right)^{1/n} - 1$ |
+| 2 | Rearranging formulas | Present value, the annuity formula, solving for $n$ |
+| 2 | Goal seek | Internal rate of return |
+| 3 | Linear functions | Simple interest, straight-line depreciation |
+| 3 | Exponential functions | Compound interest, declining-balance depreciation |
+| 3 | Logarithms | How many years until a target or until a loan is paid off |
+
+With these tools you can follow the quantitative parts of the modules that come next. The exam will ask you to use them in exactly this kind of business situation.

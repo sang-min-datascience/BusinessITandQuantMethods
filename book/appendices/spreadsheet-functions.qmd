@@ -59,4 +59,22 @@ Put the inputs in one column and the formula results in the next, then select bo
 | LibreOffice Calc | Insert > Chart > XY (Scatter), lines only |
 | Google Sheets    | Insert > Chart, line chart, tick *Use column A as labels* |
 
-Functions for Session 4 (interest and loan functions) will be added with that chapter.
+## Money over time (Session 4)
+
+These functions work the same way in Excel, LibreOffice Calc and Google Sheets. The rate is per period (monthly rate for monthly payments), and they follow a **sign convention**: money you receive is positive, money you pay is negative. That is why the examples put a minus sign in front of the amount you pay or borrow.
+
+| Purpose | Function | German Excel | Example | Result |
+|------------------------|-------------------|--------------|----------------------|----------|
+| Loan instalment | `PMT(rate, nper, pv)` | `RMZ` | `=PMT(5%,4,-12000)` | 3,384.14 |
+| Final value of a savings plan | `FV(rate, nper, pmt)` | `ZW` | `=FV(3%,5,-1000)` | 5,309.14 |
+| Present value | `PV(rate, nper, pmt, fv)` | `BW` | `=PV(4%,5,0,-10000)` | 8,219.27 |
+| Net present value | `NPV(rate, values)` | `NBW` | `=-12000+NPV(5%,B5:B8)` | (see @sec-present-value) |
+| Internal rate of return | `IRR(values)` | `IKV` | `=IRR(B4:B8)` | 11.6 % |
+| Number of periods | `NPER(rate, pmt, pv)` | `ZZR` | `=NPER(5%,-1500,10000)` | 8.31 |
+| Interest rate | `RATE(nper, pmt, pv)` | `ZINS` | `=RATE(4,-3384.14,12000)` | 5 % |
+| Effective annual rate | `EFFECT(rate, m)` | `EFFEKTIV` | `=EFFECT(6%,12)` | 6.17 % |
+| Straight-line depreciation | `SLN(cost, salvage, life)` | `LIA` | `=SLN(12000,0,5)` | 2,400 |
+
+`NPV` discounts the **first** value in its range by one period, so leave the investment of year 0 out of the range and add it separately.
+
+For an investment, `IRR` finds the rate at which the NPV is zero; you can also find it with goal seek on the NPV cell.

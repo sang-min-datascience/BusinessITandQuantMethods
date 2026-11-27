@@ -1,0 +1,55 @@
+# Catch-up sheet for Session 4 {#sec-s4-catchup}
+
+::: {.voice}
+Could not prepare? Do not worry, it happens. Almost everything in this session comes from one idea: money grows by the factor $q = 1 + i$ every period. This page gives you that idea and the formulas built on it, plus two worked examples. Thirty to forty minutes, and you are back in.
+:::
+
+## The essentials on one page
+
+| Topic | What to remember |
+|---------------------|----------------------------------------------------------|
+| Simple interest | $K_n = K_0 \,(1 + i\,n)$. For part of a year, $n$ is a fraction, e.g. $\frac{3}{12}$ |
+| Compound interest | $K_n = K_0 \, q^n$ with $q = 1 + i$ |
+| Several periods a year | Use $\frac{i}{m}$ per period and $m \cdot n$ periods |
+| Effective annual rate | $i_{\text{eff}} = \left(1 + \frac{i}{m}\right)^m - 1$. Compare offers with this rate |
+| Present value | $K_0 = \dfrac{K_n}{q^n}$: move money back to today before comparing |
+| Net present value | Sum of all payments at present value; invest if $NPV > 0$ |
+| Savings plan | $R_n = R \cdot \dfrac{q^n - 1}{q - 1}$ |
+| Present value of regular payments | $R_0 = R \cdot \dfrac{1 - q^{-n}}{i}$ |
+| Loan instalment | $A = K_0 \cdot \dfrac{i \, q^n}{q^n - 1}$ |
+| Repayment schedule | Interest = balance $\cdot\, i$; repayment = instalment − interest |
+| Depreciation | Straight-line: $B_t = A_0 - D\,t$; declining: $B_t = A_0 \,(1 - p)^t$ |
+
+## Two worked examples
+
+::: {.callout-note}
+## Example 1: a car loan
+€15,000 at 4 % a year, repaid in 3 yearly instalments.
+
+1. Instalment: $A = 15\,000 \cdot \frac{0.04 \cdot 1.04^3}{1.04^3 - 1}$, so $A = 15\,000 \cdot \frac{0.044995}{0.124864} \approx 5\,405.23$ euros
+2. Year 1: interest $15\,000 \cdot 0.04 = 600$, repayment $5\,405.23 - 600 = 4\,805.23$
+3. Balance after year 1: $15\,000 - 4\,805.23 = 10\,194.77$
+4. Total interest: $3 \cdot 5\,405.23 - 15\,000 = 1\,215.69$ euros
+:::
+
+::: {.callout-note}
+## Example 2: which offer is worth more?
+A customer offers €2,000 now or €2,150 in two years. Money earns 3 %.
+
+1. Present value of the later offer: $\frac{2\,150}{1.03^2} = \frac{2\,150}{1.0609} \approx 2\,026.58$ euros
+2. Compare: $2\,026.58 > 2\,000$, so the later offer is worth slightly more.
+:::
+
+## Three warm-up tasks
+
+1. €4,000 is invested at 2 % compound interest. What is it worth after 8 years?
+2. What is the effective annual rate of 12 % a year with monthly interest?
+3. You save €50 at the end of every month for 3 years at 0.2 % a month. How much do you have at the end?
+
+::: {.hidden-solution title="Show answers to the warm-up tasks"}
+1. $4\,000 \cdot 1.02^8 \approx 4\,686.64$ euros.
+2. $1.01^{12} - 1 \approx 12.68\,\%$.
+3. $50 \cdot \frac{1.002^{36} - 1}{0.002} \approx 50 \cdot 37.2890 \approx 1\,864.45$ euros.
+:::
+
+Done? Join your group and tell them which step you found hardest. Then go back to @sec-present-value or @sec-annuities for anything that still feels unclear.

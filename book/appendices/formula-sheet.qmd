@@ -42,6 +42,21 @@ All formulas of the block on one page, collected session by session. Use it to r
 | Time to reach a target | $n = \dfrac{\ln(K_n / K_0)}{\ln(1 + i)}$ |
 | Rule of 70 | Doubling time $\approx \dfrac{70}{\text{rate in percent}}$ |
 
-## Session 4
+## Session 4: Money over time
 
-To be added as the chapters are written.
+| Topic | Formula |
+|---------------------|--------------------------------------------------|
+| Simple interest | $K_n = K_0 \,(1 + i\,n)$ |
+| Compound interest | $K_n = K_0 \, q^n$ with $q = 1 + i$ |
+| Interest $m$ times a year | $K_n = K_0 \left(1 + \dfrac{i}{m}\right)^{m n}$ |
+| Effective annual rate | $i_{\text{eff}} = \left(1 + \dfrac{i}{m}\right)^m - 1$ |
+| Skonto as a yearly rate | $\dfrac{\text{discount}}{100 - \text{discount}} \cdot \dfrac{365}{\text{days gained}}$ |
+| Present value | $K_0 = \dfrac{K_n}{q^n}$ |
+| Net present value | $NPV = -I_0 + \dfrac{C_1}{q} + \dfrac{C_2}{q^2} + \dots + \dfrac{C_n}{q^n}$; invest if $NPV > 0$ |
+| Geometric series | $1 + q + \dots + q^{n-1} = \dfrac{q^n - 1}{q - 1}$ |
+| Savings plan (final value) | $R_n = R \cdot \dfrac{q^n - 1}{q - 1}$ |
+| Regular payments (present value) | $R_0 = R \cdot \dfrac{1 - q^{-n}}{i}$ |
+| Loan instalment | $A = K_0 \cdot \dfrac{i \, q^n}{q^n - 1}$ |
+| Remaining debt after $k$ periods | $K_k = K_0 \, q^k - A \cdot \dfrac{q^k - 1}{q - 1}$ |
+| Straight-line depreciation | $D = \dfrac{A_0 - R}{n}$, $\quad B_t = A_0 - D\,t$ |
+| Declining-balance depreciation | $B_t = A_0 \,(1 - p)^t$ |

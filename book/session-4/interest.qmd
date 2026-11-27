@@ -1,0 +1,197 @@
+# Simple and compound interest {#sec-interest}
+
+::: {.goals}
+Goals
+
+- Tell simple and compound interest apart and calculate both.
+- Work with interest paid monthly or quarterly.
+- Compare offers with the effective annual rate.
+- Decide whether an early-payment discount (*Skonto*) is worth taking.
+:::
+
+::: {.video minutes="12"}
+Simple and compound interest, effective rate
+:::
+
+## The words
+
+Interest is the price of money over time. If you borrow, you pay it; if you save, you receive it. A few terms appear in every bank offer:
+
+| Term | Symbol | Meaning |
+|-------------------|:-----:|------------------------------------------------------|
+| Principal (*Kapital*) | $K_0$ | The amount at the start |
+| Interest rate (*Zinssatz*) | $i$ | Interest per period as a share of the principal, e.g. $i = 0.05$ for 5 % a year |
+| Number of periods | $n$ | Usually years, sometimes months |
+| Final value (*Endwert*) | $K_n$ | The amount after $n$ periods |
+| Interest factor | $q$ | $q = 1 + i$, the growth factor from Session 1 |
+
+## Simple interest
+
+With **simple interest**, interest is calculated on the original principal only. The interest is not added to the account, so it does not earn interest itself. Each period adds the same amount, $K_0 \cdot i$:
+
+$$K_n = K_0 \cdot (1 + i \cdot n)$$
+
+This is a linear function of $n$ (Session 3). Simple interest is used for periods shorter than a year, for example for an overdraft for a few months or a short-term supplier credit. For a fraction of a year, $n$ is that fraction: 9 months is $n = \frac{9}{12} = 0.75$.
+
+::: {.callout-note}
+## Worked example: a short-term loan
+Loop Cycles borrows €4,000 for 3 months at 6 % a year to buy a batch of used bikes before the spring season.
+
+$$\text{Interest} = 4\,000 \cdot 0.06 \cdot \frac{3}{12} = 60 \text{ euros}$$
+
+It pays back €4,060 after three months.
+:::
+
+## Compound interest
+
+With **compound interest**, the interest is added to the account at the end of each period, and from then on it earns interest too. Each period multiplies the balance by the same factor $q = 1 + i$:
+
+$$K_n = K_0 \cdot (1 + i)^n = K_0 \cdot q^n$$
+
+You know this formula from Session 1 (growth factors) and Session 3 (exponential functions). Interest is just one more example of growth by a fixed percentage.
+
+::: {.callout-note}
+## Worked example: simple versus compound
+Loop Cycles puts €5,000 aside for five years at 4 %.
+
+- **Simple:** $5\,000 \cdot (1 + 0.04 \cdot 5) = 5\,000 \cdot 1.2 = 6\,000$ euros
+- **Compound:** $5\,000 \cdot 1.04^5 = 5\,000 \cdot 1.21665 \approx 6\,083.26$ euros
+
+The difference, €83.26, is interest on interest. It is small after five years, but it grows exponentially: after thirty years it would be about €5,200.
+:::
+
+The compound interest formula has four letters, and from Sessions 2 and 3 you can solve it for each one:
+
+| Wanted | Formula | Example ($K_0 = 5\,000$, $K_n = 6\,083.26$, $n = 5$, $i = 4\,\%$) |
+|-------------------|--------------------------|------------------------------------|
+| Final value | $K_n = K_0 \cdot q^n$ | $5\,000 \cdot 1.04^5 = 6\,083.26$ |
+| Principal | $K_0 = \dfrac{K_n}{q^n}$ | $\dfrac{6\,083.26}{1.04^5} = 5\,000$ |
+| Rate | $i = \left(\dfrac{K_n}{K_0}\right)^{1/n} - 1$ | $1.21665^{1/5} - 1 = 0.04$ |
+| Periods | $n = \dfrac{\ln(K_n / K_0)}{\ln q}$ | $\dfrac{\ln 1.21665}{\ln 1.04} = 5$ |
+
+The second line, dividing by $q^n$, is so important that it gets its own chapter: @sec-present-value.
+
+## Interest more than once a year
+
+Banks often quote a **nominal rate** per year (*Nominalzins*) but pay or charge interest monthly or quarterly. The rule is: divide the rate by the number of periods per year $m$, and multiply the number of years by $m$.
+
+$$K_n = K_0 \cdot \left(1 + \frac{i}{m}\right)^{m \cdot n}$$
+
+::: {.callout-note}
+## Worked example: quarterly interest
+€10,000 at a nominal 4 % for 3 years.
+
+- **Yearly:** $10\,000 \cdot 1.04^3 \approx 11\,248.64$ euros
+- **Quarterly:** $m = 4$, so 1 % per quarter for 12 quarters: $10\,000 \cdot 1.01^{12} \approx 11\,268.25$ euros
+
+Quarterly interest earns €19.61 more, because interest starts earning interest earlier.
+:::
+
+## The effective annual rate
+
+How do you compare "4 % paid quarterly" with "4.05 % paid yearly"? You convert both to the **effective annual rate** (*effektiver Jahreszins*): the yearly rate that would give the same result with interest paid once a year.
+
+$$i_{\text{eff}} = \left(1 + \frac{i}{m}\right)^m - 1$$
+
+::: {.callout-note}
+## Worked example: a monthly rate
+A credit card charges a nominal 6 % a year, compounded monthly.
+
+$$
+\begin{aligned}
+i_{\text{eff}} &= \left(1 + \frac{0.06}{12}\right)^{12} - 1 = 1.005^{12} - 1\\
+&\approx 0.06168 = 6.168\,\%
+\end{aligned}
+$$
+
+The card really costs about 6.17 % a year, not 6 %. And 4 % quarterly is $1.01^4 - 1 \approx 4.06\,\%$, so it beats 4.05 % yearly by a hair.
+:::
+
+::: {.callout-warning}
+## Common mistake: comparing nominal rates
+Two offers with the same nominal rate are not the same offer if one compounds monthly and the other yearly. Always compare **effective** rates. In the EU, lenders must state the effective annual rate for consumer credit, so look for it in the small print (in German, *effektiver Jahreszins*).
+:::
+
+## Early-payment discounts (*Skonto*)
+
+Many invoices between businesses say something like "2 % discount if paid within 10 days, otherwise net within 30 days". In Germany this discount is called *Skonto*. Is it worth taking?
+
+If Loop Cycles skips the discount, it keeps its money for 20 more days, and pays 2 % more for that privilege. In effect, the supplier is lending it 98 % of the invoice for 20 days at a price of 2 %. As a yearly rate (simple interest, 365 days):
+
+$$i = \frac{2}{98} \cdot \frac{365}{20} \approx 0.3724 = 37.2\,\% \text{ a year}$$
+
+::: {.callout-note}
+## Worked example: take the discount
+A supplier's invoice of €5,000 offers 2 % Skonto within 10 days, net 30 days. Loop Cycles' overdraft costs 10 % a year.
+
+- Pay on day 10: €4,900. Borrow it on the overdraft for 20 days: $4\,900 \cdot 0.10 \cdot \frac{20}{365} \approx 26.85$ euros interest.
+- Pay on day 30: €5,000.
+
+Taking the discount and borrowing saves about €100 − €26.85 ≈ €73. Unless your overdraft costs more than 37 % a year, always take the Skonto.
+:::
+
+::: {.voice}
+Skonto looks like a small detail on an invoice, and that is exactly why it is easy to ignore. Turn the 2 % into a yearly rate, and it suddenly becomes one of the best "investments" a small business has. This is the kind of thing I mean when I say maths is a tool for business decisions.
+:::
+
+Some textbooks and German business practice use a 360-day year for this calculation (*kaufmännische Zinsrechnung*), which gives 36.7 %. The decision is the same.
+
+## In a spreadsheet, R and Python
+
+```{.sheet title="Interest calculations. The rate in B1 and the years in B2 are inputs." highlight="B4 B5 B6" header="false"}
+Nominal rate | 4%
+Years | 3
+Principal | 10000
+Yearly | =B3*(1+B1)^B2 -> 11,248.64
+Quarterly | =B3*(1+B1/4)^(4*B2) -> 11,268.25
+Effective rate (quarterly) | =(1+B1/4)^4-1 -> 4.06%
+```
+
+Excel, LibreOffice and Google Sheets also have a function for the effective rate: `=EFFECT(4%,4)` gives the same 4.06 % (German Excel: `=EFFEKTIV(4%;4)`). See @sec-spreadsheet for more.
+
+::: {.panel-tabset group="language"}
+## R
+```r
+K0 <- 10000; i <- 0.04; n <- 3
+K0 * (1 + i)^n               # 11248.64
+K0 * (1 + i/4)^(4 * n)       # 11268.25
+(1 + 0.06/12)^12 - 1         # 0.06167781
+2/98 * 365/20                # 0.372449 (Skonto as a yearly rate)
+```
+## Python
+```python
+K0, i, n = 10000, 0.04, 3
+K0 * (1 + i)**n              # 11248.640000000001
+K0 * (1 + i/4)**(4 * n)      # 11268.250301319698
+(1 + 0.06/12)**12 - 1        # 0.06167781186449828
+2/98 * 365/20                # 0.37244897959183676 (Skonto as a yearly rate)
+```
+:::
+
+::: {.callout-tip}
+## Check yourself
+
+1. You lend a friend's start-up €1,500 for 8 months at 5 % simple interest. How much interest do you receive?
+
+   ::: {.hidden-solution}
+   $1\,500 \cdot 0.05 \cdot \frac{8}{12} = 50$ euros.
+   :::
+
+2. €2,000 is invested at 3 % compound interest for 10 years. What is the final value?
+
+   ::: {.hidden-solution}
+   $2\,000 \cdot 1.03^{10} \approx 2\,000 \cdot 1.34392 \approx 2\,687.83$ euros.
+   :::
+
+3. Which is better for a saver: 3 % compounded monthly or 3.04 % compounded yearly?
+
+   ::: {.hidden-solution}
+   $\left(1 + \frac{0.03}{12}\right)^{12} - 1 = 1.0025^{12} - 1 \approx 3.04\,\%$. They are practically the same: 3.0416 % versus 3.04 %, so monthly is better by a tiny margin.
+   :::
+
+4. An invoice offers 3 % Skonto within 7 days, net 30 days. What is the yearly rate of skipping the discount?
+
+   ::: {.hidden-solution}
+   $\frac{3}{97} \cdot \frac{365}{23} \approx 0.0309 \cdot 15.87 \approx 0.491$, about **49 % a year**. Take the discount.
+   :::
+:::
