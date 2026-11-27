@@ -60,7 +60,12 @@ $$q_{\text{vertex}} = -\frac{170}{2 \cdot (-2)} = \frac{170}{4} = 42.5$$
 
 Check with symmetry: halfway between 20 and 65 is $\frac{20 + 65}{2} = 42.5$. ✓
 
-$$P(42.5) = -2 \cdot 42.5^2 + 170 \cdot 42.5 - 2600 = -3612.5 + 7225 - 2600 = 1012.50$$
+$$
+\begin{aligned}
+P(42.5) &= -2 \cdot 42.5^2 + 170 \cdot 42.5 - 2600\\
+&= -3612.5 + 7225 - 2600 = 1012.50
+\end{aligned}
+$$
 
 ![Loop Cycles' profit when the price falls with volume. The profit is positive between the break-even points at 20 and 65 bikes and highest at 42.5 bikes.](figures/profit-parabola.svg){#fig-profit-parabola fig-alt="A downward-opening parabola. It crosses zero at 20 and 65 bikes and peaks at 42.5 bikes with a profit of 1,012.50 euros. At zero bikes the profit is minus 2,600 euros."}
 

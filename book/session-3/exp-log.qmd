@@ -39,7 +39,14 @@ After 12 months the two are still close: $L(12) = 16\,000$ and $E(12) \approx 17
 
 If $p$ is negative, the function falls. A delivery van bought for €20,000 that loses 20 % of its value every year is worth
 
-$$V(t) = 20\,000 \cdot 0.8^t, \qquad V(3) = 20\,000 \cdot 0.512 = 10\,240 \text{ euros after three years.}$$
+$$
+\begin{aligned}
+V(t) &= 20\,000 \cdot 0.8^t\\
+V(3) &= 20\,000 \cdot 0.512 = 10\,240
+\end{aligned}
+$$
+
+After three years, the van is worth €10,240.
 
 The value never quite reaches zero; it just keeps shrinking by a fifth. You will meet this again in Session 4 as declining-balance depreciation.
 
@@ -86,7 +93,12 @@ This completes the set from @sec-rearranging: the compound growth formula can no
 ## Worked example: saving for new equipment
 Loop Cycles puts €10,000 into a savings account at 4 % a year. How long until it has €15,000 for a new paint booth?
 
-$$n = \frac{\ln(15\,000 / 10\,000)}{\ln(1.04)} = \frac{\ln(1.5)}{\ln(1.04)} \approx \frac{0.4055}{0.0392} \approx 10.3$$
+$$
+\begin{aligned}
+n &= \frac{\ln(15\,000 / 10\,000)}{\ln(1.04)} = \frac{\ln(1.5)}{\ln(1.04)}\\
+&\approx \frac{0.4055}{0.0392} \approx 10.3
+\end{aligned}
+$$
 
 After 10 years it is not quite there, so it takes **11 years**. (Interest is usually paid once a year, so round up to a whole year.)
 :::
@@ -95,7 +107,13 @@ After 10 years it is not quite there, so it takes **11 years**. (Interest is usu
 ## Common mistake: logarithm rules that do not exist
 $\ln(a + b)$ is **not** $\ln(a) + \ln(b)$, and $\frac{\ln(2)}{\ln(1.05)}$ is **not** $\ln\!\left(\frac{2}{1.05}\right)$. The rules that do hold are:
 
-$$\ln(a \cdot b) = \ln(a) + \ln(b), \qquad \ln\!\left(\frac{a}{b}\right) = \ln(a) - \ln(b), \qquad \ln\!\left(a^t\right) = t \cdot \ln(a)$$
+$$
+\begin{aligned}
+\ln(a \cdot b) &= \ln(a) + \ln(b)\\
+\ln\!\left(\frac{a}{b}\right) &= \ln(a) - \ln(b)\\
+\ln\!\left(a^t\right) &= t \cdot \ln(a)
+\end{aligned}
+$$
 :::
 
 ## The rule of 70

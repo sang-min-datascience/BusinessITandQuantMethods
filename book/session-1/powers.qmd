@@ -16,7 +16,9 @@ Powers, roots and the rules of exponents
 
 A power is a short way of writing repeated multiplication:
 
-$$a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ times}}, \qquad \text{for example } 1.05^3 = 1.05 \cdot 1.05 \cdot 1.05 = 1.157625$$
+$$a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ times}}$$
+
+For example, $1.05^3 = 1.05 \cdot 1.05 \cdot 1.05 = 1.157625$.
 
 $a$ is the **base** and $n$ is the **exponent**. In business, the most common base is a growth factor such as $1.05$, and the exponent counts periods: years, months, quarters.
 

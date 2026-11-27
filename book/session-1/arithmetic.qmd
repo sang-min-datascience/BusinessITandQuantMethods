@@ -55,8 +55,10 @@ A negative number is an amount below zero: money that flows out, a loss, a fall 
 
 $$
 \begin{aligned}
-a + (-b) &= a - b & \qquad (-a)\cdot(-b) &= a\cdot b\\
-a - (-b) &= a + b & \qquad (-a)\cdot b &= -(a\cdot b)
+a + (-b) &= a - b\\
+a - (-b) &= a + b\\
+(-a)\cdot(-b) &= a\cdot b\\
+(-a)\cdot b &= -(a\cdot b)
 \end{aligned}
 $$
 
@@ -88,7 +90,13 @@ A customer buys 3 refurbished bikes at €364 each. Loop Cycles gives a 5 % disc
 
 The discount applies to the bikes only, so the bikes are bracketed together:
 
-$$3 \cdot 364 \cdot (1 - 0.05) + 25 = 1092 \cdot 0.95 + 25 = 1037.40 + 25 = 1062.40$$
+$$
+\begin{aligned}
+&3 \cdot 364 \cdot (1 - 0.05) + 25\\
+={}&1092 \cdot 0.95 + 25\\
+={}&1037.40 + 25 = 1062.40
+\end{aligned}
+$$
 
 The customer pays **€1,062.40**.
 :::

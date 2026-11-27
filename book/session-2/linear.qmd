@@ -48,7 +48,9 @@ $$
 \begin{aligned}
 \text{Revenue:}\quad R &= 364\,q\\
 \text{Cost:}\quad C &= 2600 + 260\,q\\
-\text{Profit:}\quad P &= R - C = 364\,q - (2600 + 260\,q) = 104\,q - 2600
+\text{Profit:}\quad P &= R - C\\
+&= 364\,q - (2600 + 260\,q)\\
+&= 104\,q - 2600
 \end{aligned}
 $$
 

@@ -35,7 +35,12 @@ Whenever you see the word *per* in a business description (per unit, per hour, p
 
 Often you do not get the formula, only two observations. From two points $(x_1, y_1)$ and $(x_2, y_2)$:
 
-$$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\text{change in output}}{\text{change in input}}, \qquad b = y_1 - m\,x_1$$
+$$
+\begin{aligned}
+m &= \frac{y_2 - y_1}{x_2 - x_1} = \frac{\text{change in output}}{\text{change in input}}\\
+b &= y_1 - m\,x_1
+\end{aligned}
+$$
 
 ::: {.callout-note}
 ## Worked example: an electricity bill
@@ -81,7 +86,12 @@ Linear functions also describe markets. A **demand function** shows how much cus
 ## Worked example: market equilibrium
 In a city's market for used e-bikes, demand and supply are (price $p$ in euros, quantity $q$ in bikes per month):
 
-$$\text{Demand: } p = 500 - 2q \qquad\qquad \text{Supply: } p = 200 + q$$
+$$
+\begin{aligned}
+\text{Demand: } p &= 500 - 2q\\
+\text{Supply: } p &= 200 + q
+\end{aligned}
+$$
 
 The market is in **equilibrium** where buyers and sellers agree on price and quantity, so where both give the same $p$:
 

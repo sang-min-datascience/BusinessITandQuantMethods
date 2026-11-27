@@ -41,7 +41,12 @@ This one idea solves most percentage problems in business, and it comes back in 
 
 Most countries add a value added tax (VAT) to prices. In Germany the standard rate is 19 %. Businesses calculate with **net** prices (without VAT); customers pay **gross** prices (with VAT).
 
-$$\text{gross} = \text{net} \cdot (1 + \text{VAT rate}) \qquad\qquad \text{net} = \frac{\text{gross}}{1 + \text{VAT rate}}$$
+$$
+\begin{aligned}
+\text{gross} &= \text{net} \cdot (1 + \text{VAT rate})\\[4pt]
+\text{net} &= \frac{\text{gross}}{1 + \text{VAT rate}}
+\end{aligned}
+$$
 
 ::: {.callout-note}
 ## Worked example: VAT on a tune-up
@@ -62,7 +67,12 @@ To remove VAT from €49.98, many people calculate $49.98 \cdot (1 - 0.19) = 40.
 
 Both describe the difference between the cost of a product and its selling price (both net), but they use different bases.
 
-$$\text{markup} = \frac{\text{price} - \text{cost}}{\textbf{cost}} \qquad\qquad \text{margin} = \frac{\text{price} - \text{cost}}{\textbf{price}}$$
+$$
+\begin{aligned}
+\text{markup} &= \frac{\text{price} - \text{cost}}{\textbf{cost}}\\[4pt]
+\text{margin} &= \frac{\text{price} - \text{cost}}{\textbf{price}}
+\end{aligned}
+$$
 
 ::: {.callout-note}
 ## Worked example: a refurbished bike

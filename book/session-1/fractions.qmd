@@ -35,9 +35,11 @@ $$\frac{18}{30} = \frac{18 : 6}{30 : 6} = \frac{3}{5}$$
 As formulas:
 
 $$
-\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}, \qquad
-\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}, \qquad
-\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}
+\begin{aligned}
+\frac{a}{b} + \frac{c}{d} &= \frac{ad + bc}{bd}\\[4pt]
+\frac{a}{b} \cdot \frac{c}{d} &= \frac{ac}{bd}\\[4pt]
+\frac{a}{b} : \frac{c}{d} &= \frac{a}{b} \cdot \frac{d}{c}
+\end{aligned}
 $$
 
 ::: {.callout-warning}
