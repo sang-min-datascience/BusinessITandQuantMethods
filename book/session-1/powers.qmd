@@ -60,6 +60,8 @@ Spreadsheets and code write $2.4 \cdot 10^6$ as `2.4E+06` or `2.4e6`.
 ::: {.callout-warning}
 ## Common mistake: billion in English and German
 The English *billion* ($10^9$) is the German *Milliarde*. The German *Billion* is $10^{12}$, which in English is a *trillion*.
+
+This is a classic pitfall when Americans and Germans talk about the market values of tech companies such as Nvidia, or the valuations of AI firms such as Anthropic. A company worth "4 trillion dollars" in an American news report is worth "4 Billionen Dollar" in a German one, and "100 billion" becomes "100 Milliarden". Translate the word without converting the number, and you are off by a factor of 1,000. When in doubt, write the number in scientific notation: $4 \cdot 10^{12}$ means the same in every language.
 :::
 
 ## Growth over several periods
