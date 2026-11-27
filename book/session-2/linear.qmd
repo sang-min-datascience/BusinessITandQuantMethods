@@ -123,7 +123,13 @@ This is my favourite kind of result: the maths gives a clear number, and then th
 ## Worked example: salary with commission
 A sales job pays a base salary of €2,000 per month plus 5 % commission on sales. What sales $s$ are needed to earn €2,600?
 
-$$2000 + 0.05\,s = 2600 \quad\Longrightarrow\quad 0.05\,s = 600 \quad\Longrightarrow\quad s = \frac{600}{0.05} = 12\,000$$
+$$
+\begin{aligned}
+2000 + 0.05\,s &= 2600 &&\mid -2000\\
+0.05\,s &= 600 &&\mid :0.05\\
+s &= \frac{600}{0.05} = 12\,000
+\end{aligned}
+$$
 
 Sales of **€12,000** per month.
 :::
@@ -132,7 +138,12 @@ Sales of **€12,000** per month.
 ## Worked example: VAT as an equation
 In Session 1 you learnt the rule "net = gross : 1.19". It is just the solution of an equation. If a customer paid €595 including VAT, the net price $x$ satisfies
 
-$$1.19\,x = 595 \quad\Longrightarrow\quad x = \frac{595}{1.19} = 500$$
+$$
+\begin{aligned}
+1.19\,x &= 595 &&\mid :1.19\\
+x &= \frac{595}{1.19} = 500
+\end{aligned}
+$$
 
 Many "rules" you have memorised are equations that someone solved for you once. If you forget the rule, set up the equation and solve it yourself.
 :::

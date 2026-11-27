@@ -153,3 +153,16 @@ details.solution .solution-body {
   background: lighten($teal, 52%); border-radius: 0 6px 6px 0;
 }
 details.solution .solution-body > p:last-child { margin-bottom: 0; }
+
+/* Long display formulas scroll sideways on small screens instead of overflowing */
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 0.1rem 0; }
+
+/* Phones: wide tables scroll inside themselves, long links wrap, formulas a bit smaller */
+@media (max-width: 600px) {
+  main table:not(.sheet) { display: block; overflow-x: auto; max-width: 100%; }
+  mjx-container[display="true"] { font-size: 92% !important; }
+}
+.csl-entry, .csl-entry a, main a { overflow-wrap: anywhere; }
+
+/* Phones: inline formulas slightly smaller so long ones fit */
+@media (max-width: 600px) { mjx-container:not([display]) { font-size: 95% !important; } }

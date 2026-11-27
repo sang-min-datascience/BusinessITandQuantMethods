@@ -94,7 +94,12 @@ Check: $50\,000 \cdot 1.0954^4 \approx 72\,000$. ✓ The simple average $\frac{4
 ## Worked example: from a yearly to a monthly rate
 A savings account pays 6 % a year with interest added every month. Which monthly rate $m$ gives the same result after one year? Twelve monthly growth factors must equal one yearly factor:
 
-$$(1 + m)^{12} = 1.06 \quad\Longrightarrow\quad m = 1.06^{1/12} - 1 \approx 0.00487 = 0.487\,\%$$
+$$
+\begin{aligned}
+(1 + m)^{12} &= 1.06\\
+m &= 1.06^{1/12} - 1 \approx 0.00487 = 0.487\,\%
+\end{aligned}
+$$
 
 This is a little less than $\frac{6\,\%}{12} = 0.5\,\%$. You will meet this again in Session 4.
 :::

@@ -67,9 +67,11 @@ Solve $x^2 - 85x + 1300 = 0$. Here $a = 1$, $b = -85$, $c = 1300$.
 
 $$
 \begin{aligned}
-b^2 - 4ac &= (-85)^2 - 4 \cdot 1 \cdot 1300 = 7225 - 5200 = 2025\\
+b^2 - 4ac &= (-85)^2 - 4 \cdot 1 \cdot 1300\\
+&= 7225 - 5200 = 2025\\
 \sqrt{2025} &= 45\\
-x_{1,2} &= \frac{85 \pm 45}{2} \quad\Longrightarrow\quad x_1 = \frac{130}{2} = 65, \quad x_2 = \frac{40}{2} = 20
+x_{1,2} &= \frac{85 \pm 45}{2}\\
+x_1 &= \frac{130}{2} = 65, \qquad x_2 = \frac{40}{2} = 20
 \end{aligned}
 $$
 
