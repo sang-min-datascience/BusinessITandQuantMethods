@@ -1,0 +1,89 @@
+# Your business: cost, revenue and profit functions {#sec-s3-business}
+
+In Session 2 you calculated single numbers for your business: the break-even volume, a target price. Now you describe your whole business with functions, so you can see every volume at once, and you look at how your sales might grow.
+
+::: {.business}
+Your business, step 3
+
+**Before class (as a group, 15 minutes):**
+
+1. Take your fixed costs, variable cost and price from Session 2.
+2. Think about demand: if you raised your price by 10 %, roughly how many fewer units would you sell per month? A guess is fine.
+
+**In class (problem set A):**
+
+3. Write down your cost, revenue and profit functions $C(q)$, $R(q)$ and $P(q)$. Name slope and intercept of each and say what they mean.
+4. Make a table for at least six volumes and sketch the graph of $C$ and $R$ by hand. Mark the break-even point and compare it with your result from Session 2.
+5. Write down your average cost function. How much cheaper per unit does each unit get if you double your volume?
+
+**In class (problem set B):**
+
+6. Turn your demand guess into a linear demand function $p(q)$ and set up the quadratic profit function. Which volume and price give the highest profit?
+7. Suppose your sales grow by a fixed percentage each month. Choose a realistic rate and work out when your sales will have doubled.
+:::
+
+## Tool moment: one formula, filled down
+
+This is the key idea of the whole block. In a spreadsheet, you write the rule **once**, in the first row of the table, and fill it down. The column of quantities is the input, the formula is the rule, the results are the output: a function.
+
+```{.sheet title="Cost, revenue and profit as functions. Inputs in B1:B3; the formulas in row 6 are filled down." highlight="B6 C6 D6" header="false"}
+Fixed costs F | 2600 | |
+Variable cost v | 260 | |
+Price p | 364 | |
+ | | |
+Bikes q | Cost C(q) | Revenue R(q) | Profit P(q)
+0 | =$B$1+$B$2*A6 -> 2,600 | =$B$3*A6 -> 0 | =C6-B6 -> −2,600
+=A6+10 -> 10 | =$B$1+$B$2*A7 -> 5,200 | =$B$3*A7 -> 3,640 | =C7-B7 -> −1,560
+=A7+10 -> 20 | =$B$1+$B$2*A8 -> 7,800 | =$B$3*A8 -> 7,280 | =C8-B8 -> −520
+=A8+10 -> 30 | =$B$1+$B$2*A9 -> 10,400 | =$B$3*A9 -> 10,920 | =C9-B9 -> 520
+```
+
+Three things to notice:
+
+- The parameters $F$, $v$ and $p$ sit in their own cells and are referenced with dollar signs. Change the price in B3, and the whole table updates.
+- The formula in B6 reads almost like the mathematics: `=$B$1+$B$2*A6` is $C(q) = F + v \cdot q$.
+- To draw the graph, select the table (A5:C11 if you go up to 50 bikes) and insert a chart. In Excel and LibreOffice, choose a **scatter (XY) chart with straight lines** (Excel: *Insert > Charts > Scatter*; LibreOffice: *Insert > Chart > XY (Scatter)*), so that the quantities in column A become the x-values. In Google Sheets, use *Insert > Chart*, choose a line chart and tick *Use column A as labels*. You get @fig-cost-revenue.
+
+## Tool moment: the same functions in R and Python
+
+In R and Python you define each function once by name and then call it with many inputs. Compare the lines with the spreadsheet above: it is the same idea three times.
+
+::: {.panel-tabset group="language"}
+## R
+```r
+F <- 2600; v <- 260; p <- 364          # the cells B1:B3
+
+cost    <- function(q) F + v * q
+revenue <- function(q) p * q
+profit  <- function(q) revenue(q) - cost(q)
+
+q <- seq(0, 50, by = 10)               # the column of inputs
+data.frame(q, cost = cost(q), revenue = revenue(q), profit = profit(q))
+#    q  cost revenue profit
+# 1  0  2600       0  -2600
+# 2 10  5200    3640  -1560
+# ...
+# 6 50 15600   18200   2600
+
+curve(profit, from = 0, to = 50)       # draws the graph of P
+```
+## Python
+```python
+F, v, p = 2600, 260, 364               # the cells B1:B3
+
+def cost(q):    return F + v * q
+def revenue(q): return p * q
+def profit(q):  return revenue(q) - cost(q)
+
+for q in range(0, 51, 10):             # the column of inputs
+    print(q, cost(q), revenue(q), profit(q))
+# 0 2600 0 -2600
+# 10 5200 3640 -1560
+# ...
+# 50 15600 18200 2600
+```
+:::
+
+::: {.voice}
+This is the moment where maths, spreadsheets and programming turn out to be the same thing in three outfits. If it clicks for you here, the IT part of the module will feel familiar from day one.
+:::

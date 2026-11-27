@@ -1,0 +1,93 @@
+# Practice for Session 3 {#sec-s3-practice}
+
+These questions mix all topics of the session, in the style of the entry quiz and the exam. Sketch a graph where it helps, and check whether your answer makes business sense before you open the solution. Questions marked ★ are a little harder.
+
+::: {.callout-tip}
+## 1. Reading a cost function
+A print shop's monthly cost is $C(q) = 1200 + 8q$, where $q$ is the number of orders. Calculate $C(150)$ and explain what 1200 and 8 mean.
+
+::: {.hidden-solution}
+$C(150) = 1200 + 1200 = 2400$ euros. 1200 is the fixed cost per month (intercept), 8 is the variable cost per order (slope).
+:::
+:::
+
+::: {.callout-tip}
+## 2. A line through two points
+A caterer charges €1,900 for 50 guests and €3,650 for 120 guests. Assuming a linear price, find the formula. What is the fixed charge?
+
+::: {.hidden-solution}
+$m = \frac{3650 - 1900}{120 - 50} = \frac{1750}{70} = 25$ euros per guest; $b = 1900 - 25 \cdot 50 = 650$. Price $= 650 + 25g$; fixed charge €650.
+:::
+:::
+
+::: {.callout-tip}
+## 3. Average cost
+Costs are $C(q) = 3000 + 12q$. What is the average cost at 250 units? At which volume does the average cost fall to €15?
+
+::: {.hidden-solution}
+$AC(250) = \frac{3000}{250} + 12 = 24$ euros. $\frac{3000}{q} + 12 = 15$ gives $\frac{3000}{q} = 3$, so $q = 1000$ units.
+:::
+:::
+
+::: {.callout-tip}
+## 4. Market equilibrium
+Demand is $p = 120 - 3q$ and supply is $p = 30 + 1.5q$. Find the equilibrium quantity and price.
+
+::: {.hidden-solution}
+$120 - 3q = 30 + 1.5q$, so $90 = 4.5q$ and $q = 20$; $p = 30 + 30 = 60$.
+:::
+:::
+
+::: {.callout-tip}
+## 5. Maximum profit
+A profit function is $P(q) = -0.5q^2 + 50q - 800$. Find the volume with the highest profit and the profit there.
+
+::: {.hidden-solution}
+$q = -\frac{50}{2 \cdot (-0.5)} = 50$; $P(50) = -1250 + 2500 - 800 = 450$ euros.
+:::
+:::
+
+::: {.callout-tip}
+## 6. ★ From demand to the best price
+A firm faces demand $p(q) = 60 - 0.2q$ and has costs $C(q) = 1000 + 20q$. Set up the profit function and find the best quantity, price and profit.
+
+::: {.hidden-solution}
+$P(q) = q\,(60 - 0.2q) - (1000 + 20q) = -0.2q^2 + 40q - 1000$. Vertex: $q = -\frac{40}{2 \cdot (-0.2)} = 100$. Price $p = 60 - 20 = 40$ euros; profit $P(100) = -2000 + 4000 - 1000 = 1000$ euros.
+:::
+:::
+
+::: {.callout-tip}
+## 7. Exponential growth
+A newsletter has 1,500 subscribers and grows by 20 % a month. How many subscribers does it have after 5 months?
+
+::: {.hidden-solution}
+$1500 \cdot 1.2^5 = 1500 \cdot 2.48832 \approx 3732$ subscribers.
+:::
+:::
+
+::: {.callout-tip}
+## 8. Losing value
+A machine bought for €8,000 loses 15 % of its value every year. What is it worth after 4 years? After how many full years is it worth less than half its price?
+
+::: {.hidden-solution}
+$8000 \cdot 0.85^4 \approx 4176.05$ euros. $0.85^t = 0.5$ gives $t = \frac{\ln 0.5}{\ln 0.85} \approx 4.27$, so after **5 years**.
+:::
+:::
+
+::: {.callout-tip}
+## 9. Tripling
+How many years does it take for an investment to triple at 8 % a year?
+
+::: {.hidden-solution}
+$1.08^t = 3$, so $t = \frac{\ln 3}{\ln 1.08} \approx \frac{1.0986}{0.07696} \approx 14.3$, so 15 full years.
+:::
+:::
+
+::: {.callout-tip}
+## 10. ★ Linear or exponential rent?
+A shop's rent is €1,000 a month. Contract A raises it by €30 every year; contract B raises it by 2.5 % every year. Which is cheaper after 10 years, and after 20 years?
+
+::: {.hidden-solution}
+After 10 years: A $1000 + 300 = 1300$, B $1000 \cdot 1.025^{10} \approx 1280.08$, so B is cheaper. After 20 years: A $1600$, B $1000 \cdot 1.025^{20} \approx 1638.62$, so A is cheaper. Exponential growth starts slowly and then overtakes.
+:::
+:::

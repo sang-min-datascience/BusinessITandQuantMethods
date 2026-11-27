@@ -33,6 +33,11 @@ Spreadsheets follow your computer's language settings. With German (or many othe
 | Square root            | `=SQRT(B2)`       | same             | same |
 | Power (same as `^`)    | `=POWER(B2,3)`    | same             | same |
 | Sum of a range         | `=SUM(B2:B4)`     | same             | same |
+| Natural logarithm      | `=LN(B2)`         | same             | same |
+| Logarithm to base 10   | `=LOG10(B2)` or `=LOG(B2)` | same    | same |
+| Logarithm to any base  | `=LOG(B2,2)`      | same             | same |
+
+`LOG` without a second argument uses base 10, unlike `log()` in R and Python, which is the natural logarithm.
 
 ## Goal seek (Session 2)
 
@@ -44,4 +49,14 @@ Goal seek changes one input cell until a formula cell reaches a target value.
 | LibreOffice Calc | Tools > Goal Seek (German: *Extras > Zielwertsuche*) |
 | Google Sheets    | No built-in goal seek; type the solved formula instead |
 
-Functions for Sessions 3 and 4 (interest and loan functions) will be added with those chapters.
+## Charts of a function (Session 3)
+
+Put the inputs in one column and the formula results in the next, then select both columns.
+
+| Program | How |
+|------------------|--------------------------------------------------|
+| Excel            | Insert > Charts > Scatter (with straight lines) |
+| LibreOffice Calc | Insert > Chart > XY (Scatter), lines only |
+| Google Sheets    | Insert > Chart, line chart, tick *Use column A as labels* |
+
+Functions for Session 4 (interest and loan functions) will be added with that chapter.

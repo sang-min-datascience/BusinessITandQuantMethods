@@ -1,0 +1,54 @@
+# Catch-up sheet for Session 3 {#sec-s3-catchup}
+
+::: {.voice}
+Could not prepare? Do not worry, it happens. This session has four ideas, and this page gives you each of them in one line plus two worked examples. Thirty to forty minutes, and you are back in.
+:::
+
+## The essentials on one page
+
+| Topic | What to remember |
+|---------------------|----------------------------------------------------------|
+| Function | One output for every input. $C(q)$ means "$C$ at $q$", not multiplication. |
+| Three views | Formula (exact), table (a few values), graph (the shape). |
+| Linear function | $f(x) = m x + b$. Slope $m$ = change "per" unit; intercept $b$ = value at 0. |
+| Slope from two points | $m = \dfrac{y_2 - y_1}{x_2 - x_1}$, then $b = y_1 - m x_1$ |
+| Business functions | $C(q) = F + v q$, $\ R(q) = p q$, $\ P(q) = R(q) - C(q)$, $\ AC(q) = \dfrac{C(q)}{q}$ |
+| Parabola | $f(x) = a x^2 + b x + c$; vertex at $x = -\dfrac{b}{2a}$ (maximum if $a < 0$) |
+| Exponential | $f(t) = a (1 + p)^t$: the same **factor** every period |
+| Logarithm | $\ln(a^t) = t \ln(a)$. Time to grow by factor $k$: $t = \dfrac{\ln k}{\ln(1 + p)}$ |
+| Rule of 70 | Doubling time $\approx \dfrac{70}{\text{rate in \%}}$ |
+
+## Two worked examples
+
+::: {.callout-note}
+## Example 1: maximum profit
+A stall sells at $p(q) = 20 - 0.1q$ and has costs $C(q) = 200 + 4q$.
+
+1. Revenue: $R(q) = q\,(20 - 0.1q) = 20q - 0.1q^2$
+2. Profit: $P(q) = 20q - 0.1q^2 - 200 - 4q$, so $P(q) = -0.1q^2 + 16q - 200$
+3. Vertex: $q = -\frac{16}{2 \cdot (-0.1)} = 80$
+4. Price $20 - 8 = 12$ euros; profit $P(80) = -640 + 1280 - 200 = 440$ euros
+:::
+
+::: {.callout-note}
+## Example 2: how long until it doubles?
+A shop's sales grow by 4 % a month.
+
+1. Condition: $1.04^t = 2$
+2. Logarithm: $t = \frac{\ln 2}{\ln 1.04} = \frac{0.6931}{0.03922} \approx 17.7$ months
+3. Rule of 70 check: $\frac{70}{4} = 17.5$ months ✓
+:::
+
+## Three warm-up tasks
+
+1. A phone plan costs €10 per month plus €0.05 per MB. Write the cost as a function of MB used and calculate the cost for 400 MB.
+2. Find the vertex of $f(x) = -x^2 + 10x - 9$.
+3. A town of 20,000 grows by 3 % a year. How many people live there after 5 years?
+
+::: {.hidden-solution title="Show answers to the warm-up tasks"}
+1. $K(m) = 10 + 0.05m$, $K(400) = 10 + 20 = 30$ euros.
+2. $x = -\frac{10}{2 \cdot (-1)} = 5$, $f(5) = -25 + 50 - 9 = 16$: maximum at $(5, 16)$.
+3. $20\,000 \cdot 1.03^5 \approx 23\,185$.
+:::
+
+Done? Join your group and tell them which step you found hardest. Then go back to @sec-power-quadratic or @sec-exp-log for anything that still feels unclear.

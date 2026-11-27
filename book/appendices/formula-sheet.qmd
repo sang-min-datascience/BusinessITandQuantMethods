@@ -28,6 +28,20 @@ All formulas of the block on one page, collected session by session. Use it to r
 | *pq*-formula | $x^2 + p x + q = 0 \ \Rightarrow\ x_{1,2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2 - q}$ |
 | Discriminant | $D = b^2 - 4ac$: two solutions if $D > 0$, one if $D = 0$, none if $D < 0$ |
 
-## Sessions 3 and 4
+## Session 3: Functions
+
+| Topic | Formula |
+|---------------------|--------------------------------------------------|
+| Linear function | $f(x) = m x + b$ (slope $m$, intercept $b$) |
+| Slope from two points | $m = \dfrac{y_2 - y_1}{x_2 - x_1}$, $\quad b = y_1 - m x_1$ |
+| Average cost | $AC(q) = \dfrac{C(q)}{q} = \dfrac{F}{q} + v$ |
+| Market equilibrium | Demand price $=$ supply price |
+| Vertex of a parabola | $f(x) = a x^2 + b x + c$: $\ x_{\text{vertex}} = -\dfrac{b}{2a}$ (maximum if $a < 0$, minimum if $a > 0$) |
+| Exponential function | $f(t) = a\,(1 + p)^t$ |
+| Logarithm | $\log_b(x) = y \iff b^y = x$; $\ \ln(a b) = \ln a + \ln b$, $\ \ln\!\left(\frac{a}{b}\right) = \ln a - \ln b$, $\ \ln(a^t) = t \ln a$ |
+| Time to reach a target | $n = \dfrac{\ln(K_n / K_0)}{\ln(1 + i)}$ |
+| Rule of 70 | Doubling time $\approx \dfrac{70}{\text{rate in percent}}$ |
+
+## Session 4
 
 To be added as the chapters are written.

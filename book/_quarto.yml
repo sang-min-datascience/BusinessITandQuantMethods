@@ -44,6 +44,13 @@ book:
     - part: "Session 3: Functions"
       chapters:
         - session-3/index.qmd
+        - session-3/functions.qmd
+        - session-3/linear-functions.qmd
+        - session-3/power-quadratic.qmd
+        - session-3/exp-log.qmd
+        - session-3/your-business.qmd
+        - session-3/practice.qmd
+        - session-3/catch-up.qmd
     - part: "Session 4: Money over time"
       chapters:
         - session-4/index.qmd

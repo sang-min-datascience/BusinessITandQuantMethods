@@ -17,6 +17,15 @@ Useful if you read the German books or meet these terms in German-speaking compa
 | Milliarde | Billion ($10^9$) |
 | Gleichung, Ungleichung | Equation, inequality |
 | Funktion, Steigung, Achsenabschnitt | Function, slope, intercept |
+| Definitionsbereich, Funktionswert | Domain, value (output) |
+| Durchschnittskosten (Stückkosten) | Average cost (cost per unit) |
+| Skaleneffekte | Economies of scale |
+| Angebot, Nachfrage, Marktgleichgewicht | Supply, demand, market equilibrium |
+| Potenzfunktion, abnehmende Grenzerträge | Power function, diminishing returns |
+| Parabel, Scheitelpunkt | Parabola, vertex |
+| Exponentialfunktion, Wachstumsfaktor | Exponential function, growth factor |
+| Logarithmus, natürlicher Logarithmus | Logarithm, natural logarithm |
+| Verdopplungszeit | Doubling time |
 | Kosten, Erlös (Umsatz), Gewinn | Cost, revenue, profit |
 | Gewinnschwelle (Break-even-Punkt) | Break-even point |
 | Fixkosten, variable Kosten | Fixed costs, variable costs |
