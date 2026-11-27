@@ -2,8 +2,6 @@
 
 This book is your main resource for the mathematics block of **IBL103 Business IT and Quantitative Methods**. It contains everything you need for the four sessions: explanations with many worked examples, short videos, your group's business case, practice questions with solutions, and a catch-up sheet for every session.
 
-You do not need to love mathematics to do well here. You need to work through the session's chapters before class, try the practice questions, and ask when something is unclear. Many of you come from different school systems, so everything starts from the basics.
-
 ::: {.goals}
 The four sessions
 
@@ -12,6 +10,31 @@ The four sessions
 3. **Functions**: cost, revenue and profit as input, rule and output
 4. **Money over time**: interest, present value, depreciation and loans
 :::
+
+## Maths as a tool for business decisions
+
+We are not doing mathematics for its own sake. Every topic in this book is here because it helps you make a business decision: what to charge, how many units you must sell to break even, whether a loan is affordable, whether to lease or buy. That is why every chapter starts from a business question and why your group runs a business of its own from the first session.
+
+You do not need to love mathematics to do well here. You need to work through the session's chapters before class, try the practice questions, and ask when something is unclear. Many of you come from different school systems, so everything starts from the basics.
+
+## A word from your instructor
+
+I am an economist, not a mathematician. I have always used mathematics as a tool: to understand markets, to check whether a number makes sense, to make a better decision. That is the attitude I would like to pass on to you. You will not prove theorems here. You will learn to use a small set of tools well, and to know when a result is plausible.
+
+## How this book was made, and how to use AI
+
+I produced this book with heavy help from Claude, an AI assistant. I decided what goes in, checked the content and the numbers, and I am responsible for every page. The AI made it possible to write a book with this many worked examples and exercises for one course.
+
+You will use AI in your studies too, and you should. But how you use it matters. Studies so far point in one direction: AI helps you learn when it works like a tutor or a sparring partner that asks questions and gives hints, and it can harm your learning when it simply hands you the solution. In a large experiment with high-school maths students, those who had unrestricted access to a chatbot did better on practice problems but worse on the exam than students without AI; a version that gave hints instead of answers largely avoided that harm [@bastani2025]. In a university physics course, an AI tutor designed around good teaching practice led to larger learning gains than an in-class active-learning lesson [@kestin2025].
+
+Some ways to use AI as a sparring partner for this block:
+
+- Ask it to **explain a step** in a worked example in a different way, or with a different business example.
+- Ask it to **check your reasoning**, not your answer: "Here is how I solved it. Where is my mistake? Do not give me the solution."
+- Ask it to **quiz you**: "Give me three percentage problems like this one, one at a time, and wait for my answer."
+- **Explain a topic to it** and ask what you got wrong.
+
+Remember that the exam is on paper and without AI. If an AI solved the problem for you, you have not practised it yet.
 
 ## How the book fits with Moodle
 

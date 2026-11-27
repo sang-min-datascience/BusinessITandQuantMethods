@@ -45,6 +45,7 @@ book:
     - appendices/formula-sheet.qmd
     - appendices/spreadsheet-functions.qmd
     - appendices/glossary.qmd
+    - appendices/writing-math.qmd
 
 bibliography: references.bib
 csl: assets/chicago-author-date.csl

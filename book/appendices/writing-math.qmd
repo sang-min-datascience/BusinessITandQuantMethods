@@ -1,0 +1,61 @@
+# Writing maths in your notes {#sec-writing-math}
+
+If you take notes in Obsidian, Notion, Jupyter, Quarto or another Markdown-based tool, you can write formulas that look like the ones in this book. Almost all of these tools use the same notation, called **LaTeX** maths. You only need a small part of it.
+
+## Inline and display formulas
+
+| Tool | Formula inside a sentence | Formula on its own line |
+|---------------------|---------------------|-------------------------|
+| Obsidian, Quarto, Jupyter, many others | `$...$` | `$$...$$` |
+| Notion | Equations from the `/` menu (inline or block) | Equation block from the `/` menu |
+
+The LaTeX you type inside is the same in all of them. For example, typing
+
+```markdown
+The gross price is $p_{gross} = p_{net} \cdot (1 + t)$.
+```
+
+gives: The gross price is $p_{gross} = p_{net} \cdot (1 + t)$.
+
+## The commands you need for this block
+
+| You want | You type | You get |
+|--------------------|----------------------------|-----------------|
+| Multiplication dot | `3 \cdot 4`                 | $3 \cdot 4$ |
+| Fraction           | `\frac{a}{b}`               | $\frac{a}{b}$ |
+| Power              | `x^2`, `1.05^{12}`          | $x^2$, $1.05^{12}$ |
+| Index (subscript)  | `K_0`, `p_{net}`            | $K_0$, $p_{net}$ |
+| Square root, n-th root | `\sqrt{x}`, `\sqrt[3]{x}` | $\sqrt{x}$, $\sqrt[3]{x}$ |
+| Percent sign       | `19\%`                      | $19\%$ |
+| Approximately, not equal | `\approx`, `\neq`     | $\approx$, $\neq$ |
+| Less or equal, greater or equal | `\leq`, `\geq` | $\leq$, $\geq$ |
+| Text inside a formula | `\text{profit}`          | $\text{profit}$ |
+| Sum                | `\sum_{t=1}^{n} x_t`        | $\sum_{t=1}^{n} x_t$ |
+| Greek letters      | `\alpha`, `\Delta`, `\pi`   | $\alpha$, $\Delta$, $\pi$ |
+
+Curly braces `{ }` group things: `1.05^12` gives $1.05^12$ (only the 1 is raised), while `1.05^{12}` gives $1.05^{12}$.
+
+## A longer example
+
+Several lines that line up at the `=` sign use an `aligned` block, with `&` before each `=` and `\\` at the end of each line:
+
+```markdown
+$$
+\begin{aligned}
+\text{price} &= 260 \cdot 1.40 \\
+             &= 364
+\end{aligned}
+$$
+```
+
+$$
+\begin{aligned}
+\text{price} &= 260 \cdot 1.40 \\
+             &= 364
+\end{aligned}
+$$
+
+::: {.callout-tip}
+## Is it worth it?
+Typing formulas takes practice, and handwritten notes are just as good for learning. If you already take digital notes, though, a few commands from the table above go a long way. An AI assistant can also translate a formula you describe in words into LaTeX; check the result by looking at how it renders.
+:::

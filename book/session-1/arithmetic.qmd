@@ -6,6 +6,7 @@ Goals
 - Name the kinds of numbers you meet in business.
 - Calculate with negative numbers, for example in a cash balance.
 - Evaluate an expression in the right order, and use brackets to say what you mean.
+- Read numbers in English and German notation.
 - Round money amounts correctly.
 :::
 
@@ -25,6 +26,28 @@ In business you meet four kinds of numbers. Each kind contains the one before it
 | Real numbers        | $\mathbb{R}$ | $\sqrt{2},\ \pi,\ 1.06^{1/12}$ | Growth rates, interest over time |
 
 Some books count $0$ as a natural number and some do not. In this course it does not matter.
+
+## Writing numbers: English and German notation
+
+You will meet numbers written in two styles: in this book, in international reports and in most software they follow the English convention, but in Germany (and much of continental Europe) the comma and the point swap roles. Read carefully, because the same characters can mean very different numbers.
+
+| | English (this book) | German |
+|------------------------------|:------------------:|:------------------:|
+| Decimal separator             | 0.19               | 0,19 |
+| Thousands separator           | 12,600 or 12 600   | 12.600 or 12 600 |
+| A price                       | €1,062.40          | 1.062,40 € |
+| Multiplication                | $3 \times 4$ or $3 \cdot 4$ | $3 \cdot 4$ |
+| Division                      | $12 \div 4$ or $12/4$ | $12 : 4$ or $12/4$ |
+| Percent                       | 19% or 19 %        | 19 % |
+
+So "1.500" is one and a half in English but one thousand five hundred in German. When in doubt, look at the context: a bike does not cost one and a half euros.
+
+In German books and in the THM lecture notes you will see the German style. In this book, the decimal point is used throughout, a small space sometimes separates thousands in formulas ($12\,600$), and $:$ is used for division, as in German schools.
+
+::: {.callout-warning}
+## Common mistake: the spreadsheet decides
+Spreadsheet programs follow your computer's language settings. With German settings you must type `0,19`, not `0.19`, and a number like `1.500` may be read as 1500 or turned into a date. Functions then separate their arguments with `;` instead of `,`. See the [spreadsheet appendix](../appendices/spreadsheet-functions.qmd).
+:::
 
 ## Negative numbers
 
