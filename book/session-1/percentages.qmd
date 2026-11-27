@@ -123,7 +123,19 @@ When a rate changes, there are two ways to describe the change. If a loan's inte
 - it rises by **1 percentage point** (the difference $5\,\% - 4\,\%$);
 - it rises by **25 percent** (the percent change $\frac{5 - 4}{4} = 0.25$).
 
-Both are correct, but they mean different things. News reports and contracts use "percentage points" for the difference between two rates.
+Both are correct, but they mean different things, and the second sounds much more dramatic. Careful writers (and contracts) use "percentage points" for the difference between two rates. **News reports often get this wrong**, sometimes by accident and sometimes because "+25 %" makes a better headline than "+1 percentage point".
+
+The same trick appears in science communication, especially about health risks. Suppose a study finds that a habit raises the risk of a certain cancer from 2 in 1,000 people to 3 in 1,000 (made-up numbers):
+
+- **Relative** change: $\frac{3 - 2}{2} = +50\,\%$. Headline: "Habit raises cancer risk by 50 %!"
+- **Absolute** change: $0.3\,\% - 0.2\,\% = 0.1$ percentage points, or 1 extra case per 1,000 people.
+
+Both numbers are true, but only the second tells you how much your own risk changes. Whenever you read "X % higher risk" or "Y % more", ask: **percent of what?** What was the starting level?
+
+::: {.callout-warning}
+## Common mistake: reading a relative change as an absolute one
+"Interest rates up 50 %" might mean 2 % → 3 %, not 2 % → 52 %. And "risk doubled" can mean 1 in a million → 2 in a million. Always look for the starting value.
+:::
 
 ## In a spreadsheet
 
