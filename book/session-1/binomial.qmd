@@ -86,17 +86,31 @@ $$x^2 - 9 = x^2 - 3^2 = (x - 3)(x + 3)$$
 A product is zero exactly when one of its factors is zero, so $x = 3$ or $x = -3$. Recognising a binomial formula often turns a hard-looking problem into an easy one.
 :::
 
-::: {.callout-tip collapse="true"}
-## Check yourself: click to see the solutions
+::: {.callout-tip}
+## Check yourself
+Try each question first, then open its solution.
+
 1. Expand $(x + 4)^2$ and $(2y - 3)^2$.
+
+   ::: {.hidden-solution}
+   $x^2 + 8x + 16$ and $4y^2 - 12y + 9$.
+   :::
+
 2. Factorise $16 - a^2$.
+
+   ::: {.hidden-solution}
+   $16 - a^2 = 4^2 - a^2 = (4 - a)(4 + a)$.
+   :::
+
 3. Calculate $102^2$ and $19 \cdot 21$ without a calculator.
+
+   ::: {.hidden-solution}
+   $102^2 = 10\,000 + 400 + 4 = 10\,404$; $19 \cdot 21 = (20-1)(20+1) = 400 - 1 = 399$.
+   :::
+
 4. Factor out as much as possible: $12q + 18q^2$.
 
-**Solutions.**
-
-1. $x^2 + 8x + 16$ and $4y^2 - 12y + 9$.
-2. $16 - a^2 = 4^2 - a^2 = (4 - a)(4 + a)$.
-3. $102^2 = 10\,000 + 400 + 4 = 10\,404$; $19 \cdot 21 = (20-1)(20+1) = 400 - 1 = 399$.
-4. $6q\,(2 + 3q)$.
+   ::: {.hidden-solution}
+   $6q\,(2 + 3q)$.
+   :::
 :::

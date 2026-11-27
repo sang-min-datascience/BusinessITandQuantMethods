@@ -1,0 +1,16 @@
+<script>
+/* Turns every <div class="hidden-solution"> into a "Show solution" button.
+   Without JavaScript the solutions simply stay visible. */
+document.querySelectorAll("div.hidden-solution").forEach(function (div) {
+  var details = document.createElement("details");
+  details.className = "solution";
+  var summary = document.createElement("summary");
+  summary.textContent = div.getAttribute("title") || div.dataset.title || "Show solution";
+  var body = document.createElement("div");
+  body.className = "solution-body";
+  while (div.firstChild) body.appendChild(div.firstChild);
+  details.appendChild(summary);
+  details.appendChild(body);
+  div.replaceWith(details);
+});
+</script>

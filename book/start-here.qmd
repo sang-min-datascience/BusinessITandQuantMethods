@@ -5,7 +5,7 @@
 Each session has an overview page with a checklist. Plan about 1.5 to 2 hours.
 
 1. **Read the chapters** of the session in this book and watch the videos inside them. The chapters are complete on their own; the videos walk you through the same ideas.
-2. **Try the practice questions** at the end of the session. Solutions are hidden under each question, so try first and then check.
+2. **Try the practice questions** at the end of the session. Each question has a "Show solution" button, so try first and then check.
 3. **Take the entry quiz on Moodle.** You can try it as often as you like before the deadline; your best attempt counts. Pass at least 3 of the 4 quizzes to earn your cheat sheet for the exam.
 
 ::: {.voice}
@@ -27,9 +27,13 @@ Boxes like this one list what you will be able to do after a chapter.
 A business question solved step by step. Read it slowly and redo it on paper.
 :::
 
-::: {.callout-tip collapse="true"}
-## Check yourself: click to see the solution
-Short questions to test your understanding. Try first, then open the box.
+::: {.callout-tip}
+## Check yourself
+Short questions to test your understanding. Try each one first, then open its solution:
+
+::: {.hidden-solution}
+Solutions stay hidden until you click the button, so you can try first.
+:::
 :::
 
 ::: {.callout-warning}

@@ -22,7 +22,7 @@ Course book for the mathematics block of IBL103. Students read it on the web (Gi
 | Spreadsheet grid | A code block with class `sheet`: cells separated by `|`, formulas start with `=`, add `-> value` to show the result. Options: `title`, `highlight="B6"`, `start-row`, `start-col`, `header="false"`. See `assets/filters/sheet.lua`. |
 | R / Python | Normal code blocks ```` ```r ```` and ```` ```python ```` inside `::: {.panel-tabset group="language"}`. They get a coloured frame and label automatically. |
 | Worked example | `::: {.callout-note}` with heading `## Worked example: ...` |
-| Self-check | `::: {.callout-tip collapse="true"}` with heading `## Check yourself ...` |
+| Self-check / practice | `::: {.callout-tip}` with heading `## Check yourself`. Put each answer in `::: {.hidden-solution}` (indent 3 spaces inside a numbered list) to get a "Show solution" button; `title="..."` changes the button text. Do not use the class `solution`, which Quarto reserves. |
 | Common mistake | `::: {.callout-warning}` |
 | Goals / business case | `::: {.goals}` and `::: {.business}`; the first line is the box title. |
 | Citations | Keys in `references.bib`, written as `@olivier2023, sec. 2.1–2.4, pp. 11–45` so the wording matches the syllabus. |

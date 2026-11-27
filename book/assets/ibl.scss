@@ -135,3 +135,21 @@ ul.task-list li { margin-bottom: 0.25rem; }
   #quarto-sidebar, #quarto-margin-sidebar, .nav-page, nav.page-navigation, footer { display: none !important; }
   body { background: #fff; font-size: 11pt; }
 }
+
+/* Solutions hidden behind a button (solution.lua) */
+details.solution { margin: 0.3rem 0 0.9rem; }
+details.solution > summary {
+  display: inline-block; cursor: pointer; list-style: none; user-select: none;
+  font-size: 0.85rem; font-weight: 600; color: darken($teal, 10%);
+  border: 1px solid lighten($teal, 25%); border-radius: 1rem; padding: 0.1rem 0.8rem;
+  background: #fff;
+}
+details.solution > summary::-webkit-details-marker { display: none; }
+details.solution > summary::before { content: "▸ "; }
+details.solution[open] > summary::before { content: "▾ "; }
+details.solution[open] > summary { background: lighten($teal, 48%); }
+details.solution .solution-body {
+  margin-top: 0.5rem; padding: 0.5rem 0.9rem; border-left: 3px solid $teal;
+  background: lighten($teal, 52%); border-radius: 0 6px 6px 0;
+}
+details.solution .solution-body > p:last-child { margin-bottom: 0; }

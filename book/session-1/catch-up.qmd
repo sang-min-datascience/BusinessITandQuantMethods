@@ -48,8 +48,7 @@ A product costs €80. The price goes up by 15 %, and in the sale it is reduced 
 2. A pair of shoes costs €71.40 including 19 % VAT. What is the net price?
 3. A town's population grew from 40,000 to 44,100 in two years. What was the average growth rate per year?
 
-::: {.callout-tip collapse="true"}
-## Answers to the warm-up tasks
+::: {.hidden-solution title="Show answers to the warm-up tasks"}
 1. $\frac{8}{12} + \frac{3}{12} = \frac{11}{12}$; $\frac{3}{5} \cdot 450 = 270$, so €270.
 2. $\frac{71.40}{1.19} = 60$, so €60.
 3. $\frac{44\,100}{40\,000} = 1.1025$ and $\sqrt{1.1025} = 1.05$, so 5 % per year.

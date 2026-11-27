@@ -72,3 +72,4 @@ format:
     lang: en-GB
     reference-location: margin
     smooth-scroll: true
+    include-after-body: assets/solutions.html

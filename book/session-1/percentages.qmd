@@ -146,17 +146,31 @@ Product | Net price | VAT rate | VAT | Gross price
 Tune-up | 42.00 | 19% | =B2*C2 -> 7.98 | =B2*(1+C2) -> 49.98
 ```
 
-::: {.callout-tip collapse="true"}
-## Check yourself: click to see the solutions
+::: {.callout-tip}
+## Check yourself
+Try each question first, then open its solution.
+
 1. A jacket costs €119 including 19 % VAT. What is the net price, and how much VAT is included?
+
+   ::: {.hidden-solution}
+   Net: $\frac{119}{1.19} = 100$, so €100. VAT: €19.
+   :::
+
 2. A product that costs €50 sells for €80 (net). Calculate the markup and the margin.
+
+   ::: {.hidden-solution}
+   Profit $80 - 50 = 30$. Markup $\frac{30}{50} = 60\,\%$; margin $\frac{30}{80} = 37.5\,\%$.
+   :::
+
 3. A shop's customers fell from 400 to 340 per week. What is the percent change?
+
+   ::: {.hidden-solution}
+   $\frac{340 - 400}{400} = \frac{-60}{400} = -15\,\%$.
+   :::
+
 4. A price rises by 10 % and then by another 10 %. By what percentage has it risen in total?
 
-**Solutions.**
-
-1. Net: $\frac{119}{1.19} = 100$, so €100. VAT: €19.
-2. Profit $80 - 50 = 30$. Markup $\frac{30}{50} = 60\,\%$; margin $\frac{30}{80} = 37.5\,\%$.
-3. $\frac{340 - 400}{400} = \frac{-60}{400} = -15\,\%$.
-4. $1.10 \cdot 1.10 = 1.21$, so 21 % in total, not 20 %.
+   ::: {.hidden-solution}
+   $1.10 \cdot 1.10 = 1.21$, so 21 % in total, not 20 %.
+   :::
 :::

@@ -144,15 +144,25 @@ Money is rounded to the smallest unit of the currency: to cents (2 decimal place
 
 **Round only at the end.** If you round in the middle of a calculation, small errors add up. Keep all digits in your calculator, and round the final result.
 
-::: {.callout-tip collapse="true"}
-## Check yourself: click to see the solutions
+::: {.callout-tip}
+## Check yourself
+Try each question first, then open its solution.
+
 1. Calculate $12 - 3 \cdot (4 - 6)$.
+
+   ::: {.hidden-solution}
+   Brackets first: $4 - 6 = -2$. Then $3 \cdot (-2) = -6$, and $12 - (-6) = 18$.
+   :::
+
 2. Calculate $-3^2 + (-3)^2$.
+
+   ::: {.hidden-solution}
+   $-3^2 = -9$ and $(-3)^2 = 9$, so the sum is $0$.
+   :::
+
 3. A customer orders 2 tune-ups at €42 each and 3 inner tubes at €14.40 each. Write one expression for the net total and calculate it.
 
-**Solutions.**
-
-1. Brackets first: $4 - 6 = -2$. Then $3 \cdot (-2) = -6$, and $12 - (-6) = 18$.
-2. $-3^2 = -9$ and $(-3)^2 = 9$, so the sum is $0$.
-3. $2 \cdot 42 + 3 \cdot 14.40 = 84 + 43.20 = 127.20$, so **€127.20**. No brackets are needed, because multiplication comes before addition.
+   ::: {.hidden-solution}
+   $2 \cdot 42 + 3 \cdot 14.40 = 84 + 43.20 = 127.20$, so **€127.20**. No brackets are needed, because multiplication comes before addition.
+   :::
 :::

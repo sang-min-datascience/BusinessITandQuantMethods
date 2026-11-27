@@ -95,17 +95,31 @@ Days used | 21
 Rent due | =B3/B2*B1 -> 840.00
 ```
 
-::: {.callout-tip collapse="true"}
-## Check yourself: click to see the solutions
+::: {.callout-tip}
+## Check yourself
+Try each question first, then open its solution.
+
 1. Simplify $\frac{45}{60}$ and write it as a percentage.
+
+   ::: {.hidden-solution}
+   Divide both by 15: $\frac{3}{4} = 75\,\%$.
+   :::
+
 2. Calculate $\frac{2}{5} + \frac{1}{4}$.
+
+   ::: {.hidden-solution}
+   $\frac{8}{20} + \frac{5}{20} = \frac{13}{20}$ (= 0.65).
+   :::
+
 3. Calculate $\frac{5}{6} : \frac{10}{9}$.
+
+   ::: {.hidden-solution}
+   $\frac{5}{6} \cdot \frac{9}{10} = \frac{45}{60} = \frac{3}{4}$.
+   :::
+
 4. A software subscription costs €360 per year. A new employee starts on 1 October. How much of this year's subscription falls on the months October to December?
 
-**Solutions.**
-
-1. Divide both by 15: $\frac{3}{4} = 75\,\%$.
-2. $\frac{8}{20} + \frac{5}{20} = \frac{13}{20}$ (= 0.65).
-3. $\frac{5}{6} \cdot \frac{9}{10} = \frac{45}{60} = \frac{3}{4}$.
-4. 3 of 12 months: $\frac{3}{12} \cdot 360 = \frac{1}{4} \cdot 360 = 90$, so **€90**.
+   ::: {.hidden-solution}
+   3 of 12 months: $\frac{3}{12} \cdot 360 = \frac{1}{4} \cdot 360 = 90$, so **€90**.
+   :::
 :::

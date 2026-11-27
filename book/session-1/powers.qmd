@@ -134,19 +134,37 @@ Start value | End value | Years | Average growth per year
 `=1.44^1/4` means $\frac{1.44^1}{4} = 0.36$. You need `=1.44^(1/4)`, which gives $1.0954$.
 :::
 
-::: {.callout-tip collapse="true"}
-## Check yourself: click to see the solutions
+::: {.callout-tip}
+## Check yourself
+Try each question first, then open its solution.
+
 1. Simplify $\dfrac{x^5 \cdot x^2}{x^4}$.
+
+   ::: {.hidden-solution}
+   $x^{5+2-4} = x^3$.
+   :::
+
 2. Calculate $8^{1/3}$ and $4^{-1}$.
+
+   ::: {.hidden-solution}
+   $8^{1/3} = \sqrt[3]{8} = 2$ and $4^{-1} = \frac{1}{4} = 0.25$.
+   :::
+
 3. Write 0.00032 and 45 million in scientific notation.
+
+   ::: {.hidden-solution}
+   $3.2 \cdot 10^{-4}$ and $4.5 \cdot 10^{7}$.
+   :::
+
 4. Prices rose by 2 % a year for 10 years. By what percentage did they rise in total?
+
+   ::: {.hidden-solution}
+   $1.02^{10} \approx 1.219$, so about 21.9 %.
+   :::
+
 5. The number of customers grew from 2,000 to 2,420 in two years. What was the average yearly growth rate?
 
-**Solutions.**
-
-1. $x^{5+2-4} = x^3$.
-2. $8^{1/3} = \sqrt[3]{8} = 2$ and $4^{-1} = \frac{1}{4} = 0.25$.
-3. $3.2 \cdot 10^{-4}$ and $4.5 \cdot 10^{7}$.
-4. $1.02^{10} \approx 1.219$, so about 21.9 %.
-5. $\left(\frac{2420}{2000}\right)^{1/2} - 1 = \sqrt{1.21} - 1 = 1.1 - 1 = 10\,\%$.
+   ::: {.hidden-solution}
+   $\left(\frac{2420}{2000}\right)^{1/2} - 1 = \sqrt{1.21} - 1 = 1.1 - 1 = 10\,\%$.
+   :::
 :::
