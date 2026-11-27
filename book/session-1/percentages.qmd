@@ -103,6 +103,10 @@ The price ends at €96, 4 % below where it started. The cut of 20 % is taken fr
 The same happens with a discount on a discount. A 10 % discount followed by an extra 5 % gives $0.90 \cdot 0.95 = 0.855$: the customer saves 14.5 %, not 15 %.
 :::
 
+::: {.voice}
+Gamers know this one. If one item gives you "+20 % damage" and a debuff takes away "20 %", you do not end up where you started. You end up at $1.2 \cdot 0.8 = 0.96$, four percent weaker, and slightly annoyed.
+:::
+
 ## Percent or percentage points?
 
 When a rate changes, there are two ways to describe the change. If a loan's interest rate rises from 4 % to 5 %:

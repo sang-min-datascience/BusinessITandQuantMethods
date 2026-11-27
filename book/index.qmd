@@ -19,7 +19,15 @@ You do not need to love mathematics to do well here. You need to work through th
 
 ## A word from your instructor
 
-I am an economist, not a mathematician. I have always used mathematics as a tool: to understand markets, to check whether a number makes sense, to make a better decision. That is the attitude I would like to pass on to you. You will not prove theorems here. You will learn to use a small set of tools well, and to know when a result is plausible.
+Hello, and welcome! My name is Sang-Min Park, and I teach the mathematics block of this module. You can call me Mr Park or, if you want to practise your German, Herr Park. Many of you will call me "Professor". Strictly speaking I am a lecturer, not a professor, but I promise not to correct you in front of the whole class.
+
+**I am an economist, not a mathematician.** I studied economics, with a minor in Chinese studies, and finished my degree at the University of Mannheim, a place that takes its numbers very seriously. Since then I have always used mathematics as a tool, never for its own sake: in my research I mostly run regressions on real data, and in my volunteer work (democracy projects, youth participation, fundraising for my children's school) I spend more evenings in spreadsheets than I would like to admit. That is the attitude I want to pass on to you. You will not prove theorems here. You will learn to use a small set of tools well, and to tell whether a result makes sense.
+
+**How I learn maths.** My own method is not glamorous: I take a worked solution, cover it up, and redo it. Then I do it again a day later. Repetition is underrated. Every worked example in this book is built so that you can do exactly that.
+
+**The best thing that happened in my first semester** had nothing to do with lectures. I was in a large economics programme, and through my minor I met a small group of people who are still my friends today. They helped me settle in, and they showed me how much time learning really takes. We spent far more hours together in the library than in lecture halls. You will work in a fixed group in this block. Give it a real chance; it may turn out to be more than a study group.
+
+A few more things about me, so you know who is standing in front of you: I am 46 and a father of three, I cook, I swim, and I read too much fantasy. I also play more video games than a father of three should. If you spot a game or a book reference in the examples, now you know why.
 
 ## How this book was made, and how to use AI
 

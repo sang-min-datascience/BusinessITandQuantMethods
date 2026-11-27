@@ -8,6 +8,10 @@ Each session has an overview page with a checklist. Plan about 1.5 to 2 hours.
 2. **Try the practice questions** at the end of the session. Solutions are hidden under each question, so try first and then check.
 3. **Take the entry quiz on Moodle.** You can try it as often as you like before the deadline; your best attempt counts. Pass at least 3 of the 4 quizzes to earn your cheat sheet for the exam.
 
+::: {.voice}
+My one study tip for this block: when you meet a worked example, read it once, then cover the solution and redo it on paper. If you get stuck, peek, then start again from the top. Boring? A little. But it is how I learnt maths, and it works.
+:::
+
 Could not prepare? Come anyway and tell the instructor. Each session has a **catch-up sheet** in this book (the last chapter of every session) that gets you ready for the second half of class.
 
 ## What the boxes mean
@@ -37,6 +41,10 @@ Errors that many students make, and how to avoid them.
 Your business
 
 The step your group takes in the running business case.
+:::
+
+::: {.voice}
+And boxes like this one are me, Mr Park, thinking out loud: a personal tip, a story, or the occasional bad joke.
 :::
 
 ## Spreadsheets, R and Python

@@ -98,6 +98,10 @@ The customer pays **€1,062.40**.
 Written without brackets, $3 \cdot 364 \cdot 1 - 0.05 + 25$ means "take 0.05 euros off and add 25", which gives €1,116.95. The brackets say what you mean: the discount factor is $1 - 0.05$.
 :::
 
+::: {.voice}
+In my volunteer work I build a lot of spreadsheets for project budgets. The one thing that bites again and again is a missing bracket: the spreadsheet gives no error message, just a wrong number that looks perfectly reasonable. Brackets are cheap; write them.
+:::
+
 ### Brackets in spreadsheets and code
 
 Spreadsheets, R and Python use the same order of operations, with `*` for multiplication, `/` for division and `^` (spreadsheets, R) or `**` (Python) for powers.

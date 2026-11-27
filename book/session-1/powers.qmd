@@ -97,6 +97,10 @@ $$(1 + m)^{12} = 1.06 \quad\Longrightarrow\quad m = 1.06^{1/12} - 1 \approx 0.00
 This is a little less than $\frac{6\,\%}{12} = 0.5\,\%$. You will meet this again in Session 4.
 :::
 
+::: {.voice}
+In empirical research, growth rates are everywhere: wages, prices, sales. A question that comes up all the time is the one from the second example: "if this grew from here to there in $n$ years, what is that per year?" A root, a minus one, done. A calculation from school answering a real research question: I like that.
+:::
+
 ## In a spreadsheet, R and Python
 
 The power operator is `^` in spreadsheets and R, and `**` in Python. Always put a fractional exponent in brackets.

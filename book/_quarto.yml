@@ -5,7 +5,7 @@ project:
 book:
   title: "Mathematics for Business"
   subtitle: "IBL103 Business IT and Quantitative Methods · Mathematics block"
-  author: "[Instructor name]"
+  author: "Sang-Min Park"
   date: last-modified
   date-format: "D MMMM YYYY"
   search: true

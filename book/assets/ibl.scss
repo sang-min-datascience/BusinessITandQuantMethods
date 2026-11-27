@@ -111,6 +111,18 @@ table.sheet td.sheet-active { outline: 2px solid $sheet-green; outline-offset: -
   font-weight: 800; color: $navy; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85rem;
 }
 
+/* Personal asides from the instructor: ::: {.voice} */
+.voice {
+  position: relative; margin: 1.2rem 0 1.4rem; padding: 0.8rem 1.1rem 0.6rem 3.6rem;
+  background: #fff; border: 1px dashed lighten($navy, 45%); border-radius: 8px; font-style: italic;
+}
+.voice::before {
+  content: "SP"; position: absolute; left: 0.9rem; top: 0.85rem;
+  width: 2.1rem; height: 2.1rem; line-height: 2.1rem; text-align: center; border-radius: 50%;
+  background: $navy; color: #fff; font-style: normal; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.04em;
+}
+.voice p:last-child { margin-bottom: 0.2rem; }
+
 /* Worked examples and self-checks use callouts; give the example a teal frame */
 .callout.callout-style-default.callout-note { border-left-color: $teal; }
 .callout-tip .callout-title-container { font-weight: 700; }
