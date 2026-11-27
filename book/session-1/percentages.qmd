@@ -88,6 +88,15 @@ $$\frac{54\,000 - 48\,000}{48\,000} = \frac{6\,000}{48\,000} = 0.125 = +12.5\,\%
 If sales had fallen from €54,000 back to €48,000, the change would be $\frac{-6\,000}{54\,000} \approx -11.1\,\%$. The difference is the same €6,000, but the base is not.
 :::
 
+::: {.callout-note collapse="true" appearance="simple"}
+## Going further (optional): the midpoint formula
+Because the base is the old value, a rise and the fall back are not the same size in percent (+12.5 % versus −11.1 % above). The **midpoint formula** (German: *Mittelpunktformel*) avoids choosing a base by dividing by the average of the two values:
+
+$$\text{percent change (midpoint)} = \frac{\text{new} - \text{old}}{(\text{new} + \text{old})/2}$$
+
+For the sales example: $\frac{6\,000}{(48\,000 + 54\,000)/2} = \frac{6\,000}{51\,000} \approx 11.8\,\%$, and the change back down is exactly $-11.8\,\%$. Economists use it when calculating price elasticities of demand, where it does not matter which of two prices is the "old" one (the *arc elasticity*). For ordinary business questions ("by how much did sales grow?") use the old value as the base.
+:::
+
 ## Several changes in a row
 
 When changes follow one another, **multiply the growth factors**. Do not add the percentages.
