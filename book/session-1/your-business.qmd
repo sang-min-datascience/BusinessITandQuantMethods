@@ -1,0 +1,98 @@
+# Your business: the price sheet {#sec-s1-business}
+
+In this session your group founds its business and sets its first prices. You do the work in class, by hand first. This chapter shows the same steps for Loop Cycles, so you know what to aim for.
+
+::: {.business}
+Your business, step 1
+
+**Before class (as a group, 15 minutes, for example in a chat):**
+
+1. Choose your business: what do you sell, and to whom? Keep it small and concrete.
+2. Choose your home market, ideally a country someone in your group knows. If you cannot decide, use Germany.
+3. Look up the country's currency, its standard VAT rate (or sales tax) and today's exchange rate to the euro. Use an official source, such as the country's tax authority or central bank, and write down where you found each number.
+
+**In class (problem set A):**
+
+4. Pick three products or services. For each, estimate the cost and choose a markup.
+5. Build the price sheet by hand: net price, VAT and gross price for each product.
+6. Calculate the margin of each product. Which one earns you the most per sale, in euros and in percent?
+:::
+
+## Loop Cycles' price sheet
+
+Loop Cycles is in Germany, so it uses euros and the standard VAT rate of 19 %.
+
+| Product | Cost | Markup | Net price | VAT (19 %) | Gross price |
+|---------------------|-------:|------:|--------:|-------:|-------:|
+| Refurbished city bike | 260.00 | 40 % | 364.00 | 69.16 | 433.16 |
+| Tune-up              | 28.00  | 50 % | 42.00  | 7.98  | 49.98  |
+| Inner tube, fitted   | 9.00   | 60 % | 14.40  | 2.74  | 17.14  |
+
+: Prices in euros. {.striped}
+
+For the inner tube, the VAT is $14.40 \cdot 0.19 = 2.736$, rounded to €2.74, and the gross price is $14.40 \cdot 1.19 = 17.136$, rounded to €17.14.
+
+::: {.callout-note}
+## Worked example: comparing prices across countries
+To compare its city bike with a group in the United States, Loop Cycles converts its net price to US dollars. With an example rate of 1 EUR = 1.10 USD (look up today's rate):
+
+$$364 \text{ EUR} \cdot 1.10 \ \tfrac{\text{USD}}{\text{EUR}} = 400.40 \text{ USD}$$
+
+Two things to watch: compare **net** prices, because VAT and sales tax differ between countries (in the US, sales tax depends on the state and is usually added at the till). And check which way the exchange rate is quoted: to go from USD back to EUR, you divide by 1.10.
+:::
+
+## Tool moment: the same sheet in a spreadsheet
+
+In a spreadsheet you write the formulas **once** in row 2 and fill them down. The VAT rate sits in its own cell, B6, so a different country only needs one change.
+
+```{.sheet title="Price sheet with formulas. Fill row 2 down to row 4." highlight="B6"}
+Product | Cost | Markup | Net price | VAT | Gross price
+City bike | 260.00 | 40% | =B2*(1+C2) -> 364.00 | =D2*$B$6 -> 69.16 | =D2+E2 -> 433.16
+Tune-up | 28.00 | 50% | =B3*(1+C3) -> 42.00 | =D3*$B$6 -> 7.98 | =D3+E3 -> 49.98
+Inner tube, fitted | 9.00 | 60% | =B4*(1+C4) -> 14.40 | =D4*$B$6 -> 2.74 | =D4+E4 -> 17.14
+ | | | | |
+VAT rate | 19% | | | |
+```
+
+When you fill a formula down, the spreadsheet adjusts the row numbers: `B2` becomes `B3`, then `B4`. That is what you want for the cost and the markup. The dollar signs in `$B$6` stop this adjustment, so every row uses the same VAT rate. This is called an **absolute reference**.
+
+::: {.callout-warning}
+## Common mistake: filling down without the dollar signs
+Without them, `=D2*B6` becomes `=D3*B7` in the next row, and B7 is empty. The VAT shows as 0.00, with no error message.
+:::
+
+## Tool moment: the same sheet in R and Python
+
+In R and Python you also write the rule once, and it is applied to all products together. You do not need to run this code; read it and compare it with the spreadsheet.
+
+::: {.panel-tabset group="language"}
+## R
+```r
+product <- c("City bike", "Tune-up", "Inner tube, fitted")
+cost    <- c(260, 28, 9)
+markup  <- c(0.40, 0.50, 0.60)
+vat     <- 0.19                      # the "cell B6" of the code
+
+net   <- cost * (1 + markup)         # 364.0  42.0  14.4
+gross <- round(net * (1 + vat), 2)   # 433.16 49.98 17.14
+
+data.frame(product, net, gross)
+```
+## Python
+```python
+products = ["City bike", "Tune-up", "Inner tube, fitted"]
+cost     = [260, 28, 9]
+markup   = [0.40, 0.50, 0.60]
+vat      = 0.19                      # the "cell B6" of the code
+
+for p, c, m in zip(products, cost, markup):
+    net = c * (1 + m)
+    gross = net * (1 + vat)
+    print(f"{p:<20} {net:8.2f} {gross:8.2f}")
+# City bike              364.00   433.16
+# Tune-up                 42.00    49.98
+# Inner tube, fitted      14.40    17.14
+```
+:::
+
+The idea is the same in all three tools: **one rule, many inputs**. In Session 3 you will see that this is exactly what a mathematical function is.

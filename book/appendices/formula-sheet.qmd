@@ -1,0 +1,21 @@
+# Formula sheet {#sec-formulas}
+
+All formulas of the block on one page, collected session by session. Use it to revise, and as a model for your own handwritten cheat sheet. Your own sheet will be more useful if you write it yourself and add the mistakes you tend to make.
+
+## Session 1: Numbers
+
+| Topic | Formula |
+|---------------------|--------------------------------------------------|
+| Fractions | $\dfrac{a}{b} + \dfrac{c}{d} = \dfrac{ad + bc}{bd}$, $\quad \dfrac{a}{b} \cdot \dfrac{c}{d} = \dfrac{ac}{bd}$, $\quad \dfrac{a}{b} : \dfrac{c}{d} = \dfrac{a}{b} \cdot \dfrac{d}{c}$ |
+| Percent | part $=$ rate $\cdot$ base |
+| Growth factor | new $=$ old $\cdot (1 + p)$; several changes: multiply the factors |
+| VAT | gross $=$ net $\cdot (1 + \text{VAT rate})$, $\quad$ net $= \dfrac{\text{gross}}{1 + \text{VAT rate}}$ |
+| Markup, margin | markup $= \dfrac{\text{price} - \text{cost}}{\text{cost}}$, $\quad$ margin $= \dfrac{\text{price} - \text{cost}}{\text{price}}$ |
+| Percent change | $\dfrac{\text{new} - \text{old}}{\text{old}}$ |
+| Powers | $a^m a^n = a^{m+n}$, $\ \dfrac{a^m}{a^n} = a^{m-n}$, $\ (a^m)^n = a^{mn}$, $\ a^0 = 1$, $\ a^{-n} = \dfrac{1}{a^n}$, $\ a^{1/n} = \sqrt[n]{a}$ |
+| Average growth rate | $p = \left(\dfrac{\text{end}}{\text{start}}\right)^{1/n} - 1$ |
+| Binomial formulas | $(a + b)^2 = a^2 + 2ab + b^2$, $\ (a - b)^2 = a^2 - 2ab + b^2$, $\ (a + b)(a - b) = a^2 - b^2$ |
+
+## Sessions 2 to 4
+
+To be added as the chapters are written.

@@ -1,0 +1,54 @@
+# Catch-up sheet for Session 1 {#sec-s1-catchup}
+
+Could not prepare? No problem. Work through this page on your own (about 30–40 minutes), then join your group. You can print it with your browser's print function.
+
+## The essentials on one page
+
+| Topic | What to remember |
+|--------------------|----------------------------------------------------------|
+| Order of operations | Brackets, then powers, then $\cdot$ and $:$, then $+$ and $-$. When in doubt, write brackets. |
+| Fractions | Add: common denominator first. Multiply: top times top, bottom times bottom. Divide: multiply by the reciprocal. |
+| Percent | $19\,\% = 0.19$. Part $=$ rate $\cdot$ base. First ask: **what is the base?** |
+| Growth factor | Up by $p$: $\cdot\,(1 + p)$. Down by $p$: $\cdot\,(1 - p)$. Several changes: multiply the factors. |
+| VAT | Gross $=$ net $\cdot\,1.19$. Net $=$ gross $: 1.19$. Never take 19 % off a gross price. |
+| Markup vs margin | Markup: profit $:$ cost. Margin: profit $:$ price. |
+| Percent change | $\dfrac{\text{new} - \text{old}}{\text{old}}$ |
+| Powers | $a^m a^n = a^{m+n}$, $a^{-n} = \frac{1}{a^n}$, $a^{1/n} = \sqrt[n]{a}$ |
+| Average growth | $\left(\dfrac{\text{end}}{\text{start}}\right)^{1/n} - 1$ |
+| Binomial formulas | $(a \pm b)^2 = a^2 \pm 2ab + b^2$, $(a+b)(a-b) = a^2 - b^2$ |
+
+## Two worked examples
+
+::: {.callout-note}
+## Example 1: price sheet for one product
+A café buys a sandwich for €2.40 and sells it with a markup of 75 %. VAT is 19 %.
+
+1. Net price: $2.40 \cdot 1.75 = 4.20$
+2. VAT: $4.20 \cdot 0.19 = 0.798 \approx 0.80$
+3. Gross price: $4.20 \cdot 1.19 = 4.998 \approx 5.00$
+4. Margin: $\frac{4.20 - 2.40}{4.20} = \frac{1.80}{4.20} \approx 42.9\,\%$
+:::
+
+::: {.callout-note}
+## Example 2: two price changes
+A product costs €80. The price goes up by 15 %, and in the sale it is reduced by 15 %.
+
+1. Combined factor: $1.15 \cdot 0.85 = 0.9775$
+2. New price: $80 \cdot 0.9775 = 78.20$
+3. Total change: $0.9775 - 1 = -0.0225 = -2.25\,\%$. The price is lower than at the start.
+:::
+
+## Three warm-up tasks
+
+1. Calculate $\frac{2}{3} + \frac{1}{4}$, and $\frac{3}{5}$ of €450.
+2. A pair of shoes costs €71.40 including 19 % VAT. What is the net price?
+3. A town's population grew from 40,000 to 44,100 in two years. What was the average growth rate per year?
+
+::: {.callout-tip collapse="true"}
+## Answers to the warm-up tasks
+1. $\frac{8}{12} + \frac{3}{12} = \frac{11}{12}$; $\frac{3}{5} \cdot 450 = 270$, so €270.
+2. $\frac{71.40}{1.19} = 60$, so €60.
+3. $\frac{44\,100}{40\,000} = 1.1025$ and $\sqrt{1.1025} = 1.05$, so 5 % per year.
+:::
+
+Done? Join your group and tell them which step you found hardest. Then go back to @sec-percentages or @sec-powers for anything that still feels unclear.

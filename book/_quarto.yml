@@ -1,0 +1,73 @@
+project:
+  type: book
+  output-dir: public          # GitLab Pages serves the folder "public"
+
+book:
+  title: "Mathematics for Business"
+  subtitle: "IBL103 Business IT and Quantitative Methods · Mathematics block"
+  author: "[Instructor name]"
+  date: last-modified
+  date-format: "D MMMM YYYY"
+  search: true
+  repo-actions: none
+  page-navigation: true
+  sidebar:
+    style: docked
+    collapse-level: 1
+  page-footer:
+    left: "IBL103 · Technische Hochschule Mittelhessen"
+    right: "Questions? Use the Moodle forum."
+  chapters:
+    - index.qmd
+    - start-here.qmd
+    - part: "Session 1: Numbers that run a business"
+      chapters:
+        - session-1/index.qmd
+        - session-1/arithmetic.qmd
+        - session-1/fractions.qmd
+        - session-1/percentages.qmd
+        - session-1/powers.qmd
+        - session-1/binomial.qmd
+        - session-1/your-business.qmd
+        - session-1/practice.qmd
+        - session-1/catch-up.qmd
+    - part: "Session 2: Equations"
+      chapters:
+        - session-2/index.qmd
+    - part: "Session 3: Functions"
+      chapters:
+        - session-3/index.qmd
+    - part: "Session 4: Money over time"
+      chapters:
+        - session-4/index.qmd
+    - references.qmd
+  appendices:
+    - appendices/formula-sheet.qmd
+    - appendices/spreadsheet-functions.qmd
+    - appendices/glossary.qmd
+
+bibliography: references.bib
+csl: assets/chicago-author-date.csl
+link-citations: true
+
+filters:
+  - assets/filters/sheet.lua
+  - assets/filters/panopto.lua
+
+# Set this once your Panopto server name is known, e.g. "thm.cloud.panopto.eu"
+panopto-host: "YOUR-PANOPTO-HOST"
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/ibl.scss]
+    toc: true
+    toc-depth: 3
+    number-depth: 2
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+    callout-appearance: default
+    lang: en-GB
+    reference-location: margin
+    smooth-scroll: true

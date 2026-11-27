@@ -1,0 +1,95 @@
+# Expanding, factorising and the binomial formulas {#sec-binomial}
+
+::: {.goals}
+Goals
+
+- Multiply out brackets and factor out common terms.
+- Use the three binomial formulas in both directions.
+- See where they help: mental arithmetic, interest over two years, and simplifying a formula before solving it.
+:::
+
+The video for this chapter is the second half of **Powers, roots and binomial formulas** in @sec-powers.
+
+## Multiplying out and factoring out
+
+The **distributive law** connects a product with a sum:
+
+$$a \cdot (b + c) = a \cdot b + a \cdot c$$
+
+Read from left to right, it **multiplies out** (expands) a bracket. Read from right to left, it **factors out** a common factor.
+
+::: {.callout-note}
+## Worked example: a cost formula
+Each refurbished bike costs Loop Cycles €180 to buy and €80 for parts and work. For $q$ bikes the cost is
+
+$$180q + 80q = (180 + 80)\,q = 260q$$
+
+Factoring out $q$ shows the cost per bike, €260, at a glance.
+
+If every bike also gets a €15 safety check, the cost of $q$ bikes is $(260 + 15)\,q$, which multiplies out to $260q + 15q = 275q$.
+:::
+
+When two brackets are multiplied, every term in the first is multiplied by every term in the second:
+
+$$(a + b)(c + d) = ac + ad + bc + bd$$
+
+## The three binomial formulas
+
+Three products of two brackets appear so often that they have their own names:
+
+$$
+\begin{aligned}
+(a + b)^2 &= a^2 + 2ab + b^2 &&\text{(first binomial formula)}\\
+(a - b)^2 &= a^2 - 2ab + b^2 &&\text{(second binomial formula)}\\
+(a + b)(a - b) &= a^2 - b^2 &&\text{(third binomial formula)}
+\end{aligned}
+$$
+
+You can check each one by multiplying out, for example $(a+b)^2 = (a+b)(a+b) = a^2 + ab + ba + b^2 = a^2 + 2ab + b^2$.
+
+::: {.callout-warning}
+## Common mistake: the missing middle term
+$(a + b)^2 \neq a^2 + b^2$. The term $2ab$ is easy to forget. Test with $a = 3$, $b = 4$: $(3+4)^2 = 49$, and $9 + 2\cdot 12 + 16 = 49$. ✓
+:::
+
+## Where they help
+
+::: {.callout-note}
+## Worked example: mental arithmetic
+- $51^2 = (50 + 1)^2 = 2500 + 100 + 1 = 2601$
+- $49 \cdot 51 = (50 - 1)(50 + 1) = 2500 - 1 = 2499$
+- $98^2 = (100 - 2)^2 = 10\,000 - 400 + 4 = 9604$
+:::
+
+::: {.callout-note}
+## Worked example: interest over two years
+Loop Cycles leaves €1,000 in a savings account at 5 % a year for two years. With the growth factor from @sec-percentages and the first binomial formula:
+
+$$1000 \cdot (1 + 0.05)^2 = 1000 \cdot (1 + 2 \cdot 0.05 + 0.05^2) = 1000 \cdot (1 + 0.10 + 0.0025) = 1102.50$$
+
+The three terms tell a story: €1,000 is the original amount, €100 is two years of interest on it, and the last €2.50 is **interest on the interest**. That small extra is the beginning of compound interest (Session 4).
+:::
+
+::: {.callout-note}
+## Worked example: simplify before you solve
+In Session 2 you will solve equations like $x^2 - 9 = 0$. The third binomial formula turns the left side into a product:
+
+$$x^2 - 9 = x^2 - 3^2 = (x - 3)(x + 3)$$
+
+A product is zero exactly when one of its factors is zero, so $x = 3$ or $x = -3$. Recognising a binomial formula often turns a hard-looking problem into an easy one.
+:::
+
+::: {.callout-tip collapse="true"}
+## Check yourself: click to see the solutions
+1. Expand $(x + 4)^2$ and $(2y - 3)^2$.
+2. Factorise $16 - a^2$.
+3. Calculate $102^2$ and $19 \cdot 21$ without a calculator.
+4. Factor out as much as possible: $12q + 18q^2$.
+
+**Solutions.**
+
+1. $x^2 + 8x + 16$ and $4y^2 - 12y + 9$.
+2. $16 - a^2 = 4^2 - a^2 = (4 - a)(4 + a)$.
+3. $102^2 = 10\,000 + 400 + 4 = 10\,404$; $19 \cdot 21 = (20-1)(20+1) = 400 - 1 = 399$.
+4. $6q\,(2 + 3q)$.
+:::

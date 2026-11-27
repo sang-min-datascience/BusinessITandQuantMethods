@@ -1,0 +1,137 @@
+# Percentages {#sec-percentages}
+
+::: {.goals}
+Goals
+
+- Find a percentage of an amount, and find the base amount from a percentage.
+- Go from net to gross prices and back (VAT).
+- Tell markup from margin.
+- Calculate percent change, combine several changes, and tell percent from percentage points.
+:::
+
+::: {.video minutes="14"}
+Percentages and percent change
+:::
+
+## The three quantities
+
+"Percent" means "per hundred": $19\,\% = \frac{19}{100} = 0.19$. Every percentage calculation links three quantities:
+
+$$\text{part} = \text{rate} \times \text{base}$$
+
+| Quantity | Meaning | Example |
+|-----------|----------------------------------------|---------------------------|
+| **Base**  | The whole you take the percentage of   | The net price, €42 |
+| **Rate**  | The percentage, written as a decimal   | 19 % = 0.19 |
+| **Part**  | The amount the percentage stands for   | The VAT, €7.98 |
+
+If you know two of them, you can find the third: $\text{rate} = \frac{\text{part}}{\text{base}}$ and $\text{base} = \frac{\text{part}}{\text{rate}}$.
+
+The most important question in every percentage problem is: **what is the base?** Most mistakes come from choosing the wrong one.
+
+## Growth factors
+
+Increasing an amount by a rate $p$ is the same as multiplying it by the **growth factor** $1 + p$. Decreasing it by $p$ means multiplying by $1 - p$:
+
+$$\text{new} = \text{old} \cdot (1 + p) \qquad \text{new} = \text{old} \cdot (1 - p)$$
+
+This one idea solves most percentage problems in business, and it comes back in Session 4 as compound interest.
+
+## VAT: from net to gross and back
+
+Most countries add a value added tax (VAT) to prices. In Germany the standard rate is 19 %. Businesses calculate with **net** prices (without VAT); customers pay **gross** prices (with VAT).
+
+$$\text{gross} = \text{net} \cdot (1 + \text{VAT rate}) \qquad\qquad \text{net} = \frac{\text{gross}}{1 + \text{VAT rate}}$$
+
+::: {.callout-note}
+## Worked example: VAT on a tune-up
+Loop Cycles charges €42 net for a tune-up.
+
+- Gross price: $42 \cdot 1.19 = 49.98$, so the customer pays **€49.98**.
+- VAT: $49.98 - 42 = 7.98$, or directly $42 \cdot 0.19 = 7.98$.
+
+Going back: a customer paid €595 including VAT. The net amount is $\frac{595}{1.19} = 500$, and the VAT is €95.
+:::
+
+::: {.callout-warning}
+## Common mistake: taking 19 % off the gross price
+To remove VAT from €49.98, many people calculate $49.98 \cdot (1 - 0.19) = 40.48$. That is wrong, because the 19 % was calculated on the **net** price, not on the gross price. Always divide by $1.19$: $\frac{49.98}{1.19} = 42.00$.
+:::
+
+## Markup and margin
+
+Both describe the difference between the cost of a product and its selling price (both net), but they use different bases.
+
+$$\text{markup} = \frac{\text{price} - \text{cost}}{\textbf{cost}} \qquad\qquad \text{margin} = \frac{\text{price} - \text{cost}}{\textbf{price}}$$
+
+::: {.callout-note}
+## Worked example: a refurbished bike
+Loop Cycles pays €180 for a used city bike and spends €80 on parts and work, so the bike costs €260. It adds a markup of 40 %:
+
+$$\text{price} = 260 \cdot 1.40 = 364$$
+
+The profit per bike is $364 - 260 = 104$ euros. As a margin, that is $\frac{104}{364} \approx 28.6\,\%$ of the price. The same €104 is a 40 % markup but only a 28.6 % margin, because the base is different.
+:::
+
+## Percent change
+
+The percent change from an old value to a new value always uses the **old** value as the base:
+
+$$\text{percent change} = \frac{\text{new} - \text{old}}{\text{old}}$$
+
+::: {.callout-note}
+## Worked example: sales up, sales down
+Loop Cycles' sales rose from €48,000 in the first year to €54,000 in the second.
+
+$$\frac{54\,000 - 48\,000}{48\,000} = \frac{6\,000}{48\,000} = 0.125 = +12.5\,\%$$
+
+If sales had fallen from €54,000 back to €48,000, the change would be $\frac{-6\,000}{54\,000} \approx -11.1\,\%$. The difference is the same €6,000, but the base is not.
+:::
+
+## Several changes in a row
+
+When changes follow one another, **multiply the growth factors**. Do not add the percentages.
+
+::: {.callout-note}
+## Worked example: +20 % then −20 %
+A price of €100 is raised by 20 % and later cut by 20 %:
+
+$$100 \cdot 1.20 \cdot 0.80 = 100 \cdot 0.96 = 96$$
+
+The price ends at €96, 4 % below where it started. The cut of 20 % is taken from the higher price of €120, so it removes more than the rise added.
+
+The same happens with a discount on a discount. A 10 % discount followed by an extra 5 % gives $0.90 \cdot 0.95 = 0.855$: the customer saves 14.5 %, not 15 %.
+:::
+
+## Percent or percentage points?
+
+When a rate changes, there are two ways to describe the change. If a loan's interest rate rises from 4 % to 5 %:
+
+- it rises by **1 percentage point** (the difference $5\,\% - 4\,\%$);
+- it rises by **25 percent** (the percent change $\frac{5 - 4}{4} = 0.25$).
+
+Both are correct, but they mean different things. News reports and contracts use "percentage points" for the difference between two rates.
+
+## In a spreadsheet
+
+Spreadsheets store 19 % as the number 0.19 and only display it as a percentage, so a formula like `=B2*(1+C2)` works directly.
+
+```{.sheet title="Net, VAT and gross price in one row" highlight="E2"}
+Product | Net price | VAT rate | VAT | Gross price
+Tune-up | 42.00 | 19% | =B2*C2 -> 7.98 | =B2*(1+C2) -> 49.98
+```
+
+::: {.callout-tip collapse="true"}
+## Check yourself: click to see the solutions
+1. A jacket costs €119 including 19 % VAT. What is the net price, and how much VAT is included?
+2. A product that costs €50 sells for €80 (net). Calculate the markup and the margin.
+3. A shop's customers fell from 400 to 340 per week. What is the percent change?
+4. A price rises by 10 % and then by another 10 %. By what percentage has it risen in total?
+
+**Solutions.**
+
+1. Net: $\frac{119}{1.19} = 100$, so €100. VAT: €19.
+2. Profit $80 - 50 = 30$. Markup $\frac{30}{50} = 60\,\%$; margin $\frac{30}{80} = 37.5\,\%$.
+3. $\frac{340 - 400}{400} = \frac{-60}{400} = -15\,\%$.
+4. $1.10 \cdot 1.10 = 1.21$, so 21 % in total, not 20 %.
+:::

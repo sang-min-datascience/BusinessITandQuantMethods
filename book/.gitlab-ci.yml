@@ -1,0 +1,12 @@
+# The book is rendered in RStudio on your computer (Render Book), which
+# writes the finished site to the folder "public". This job only publishes
+# that folder with GitLab Pages, so the CI runner needs neither R nor Quarto.
+pages:
+  stage: deploy
+  script:
+    - echo "Publishing the rendered book from public/"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

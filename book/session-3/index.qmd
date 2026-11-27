@@ -1,0 +1,12 @@
+# Overview of Session 3 {#sec-s3}
+
+::: {.callout-important appearance="simple"}
+## Coming soon
+This session's chapters are being written. The plan is below.
+:::
+
+**Theme:** Functions, input, rule, output. Cost, revenue and profit functions; demand; sales growth.
+
+**Planned chapters:** what a function is (table, graph, formula); linear functions, slope and intercept; power and quadratic functions; exponential growth and logarithms; your business: cost, revenue and profit functions; practice; catch-up sheet.
+
+**Further reading (optional):** @maybart2025, sec. 1.1–1.2, pp. 1–12, and sec. 2.2, pp. 67–76; @stitz2013, sec. 6.1, pp. 417–436; also @stitz2013, sec. 1.3–1.4, pp. 43–75, and sec. 2.1, pp. 151–172 and @porto2022, ch. 3, pp. 243–258 and 300–330. In German: @gundlach2024, ch. 2–3, pp. 25–48.

@@ -1,0 +1,12 @@
+# Overview of Session 4 {#sec-s4}
+
+::: {.callout-important appearance="simple"}
+## Coming soon
+This session's chapters are being written. The plan is below.
+:::
+
+**Theme:** Money over time. Finance your first equipment: compare loans, plan repayments, decide whether to lease or buy.
+
+**Planned chapters:** simple and compound interest; future and present value; effective annual rate; geometric series; linear and declining-balance depreciation; loans repaid in equal instalments; your business: financing; practice; catch-up sheet.
+
+**Further reading (optional):** @olivier2023, sec. 9.1–9.3, pp. 337–366, and sec. 11.1–11.4, pp. 443–483; also @olivier2023, sec. 13.3, pp. 576–585, and sec. 15.1, pp. 654–666 and @mazur2021, ch. 9, pp. 841–926. In German: @gundlach2024, ch. 9, pp. 141–164 or @cramer2015, ch. 4, pp. 53–69.

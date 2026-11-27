@@ -1,0 +1,28 @@
+# Welcome {.unnumbered}
+
+This book is your main resource for the mathematics block of **IBL103 Business IT and Quantitative Methods**. It contains everything you need for the four sessions: explanations with many worked examples, short videos, your group's business case, practice questions with solutions, and a catch-up sheet for every session.
+
+You do not need to love mathematics to do well here. You need to work through the session's chapters before class, try the practice questions, and ask when something is unclear. Many of you come from different school systems, so everything starts from the basics.
+
+::: {.goals}
+The four sessions
+
+1. **Numbers that run a business**: arithmetic, fractions, percentages, powers and roots, binomial formulas
+2. **Equations**: finding the number you need, from break-even to target prices
+3. **Functions**: cost, revenue and profit as input, rule and output
+4. **Money over time**: interest, present value, depreciation and loans
+:::
+
+## How the book fits with Moodle
+
+| Where | What you find there |
+|-----------------|----------------------------------------------------------|
+| **This book**   | Explanations, videos, worked examples, your business case, practice with solutions, catch-up sheets |
+| **Moodle**      | The entry quizzes (they count for your cheat sheet), announcements, the forum, the syllabus |
+
+Start with [Start here](start-here.qmd), which explains how each chapter is built and what the coloured boxes mean.
+
+::: {.callout-note appearance="simple"}
+## A living book
+This book grows during the term. If you find a mistake or something is unclear, post it in the Moodle forum. Your classmates will thank you.
+:::

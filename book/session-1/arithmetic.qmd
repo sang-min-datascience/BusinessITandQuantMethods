@@ -1,0 +1,131 @@
+# Numbers and the order of operations {#sec-arithmetic}
+
+::: {.goals}
+Goals
+
+- Name the kinds of numbers you meet in business.
+- Calculate with negative numbers, for example in a cash balance.
+- Evaluate an expression in the right order, and use brackets to say what you mean.
+- Round money amounts correctly.
+:::
+
+::: {.video minutes="10"}
+Order of operations and negative numbers
+:::
+
+## The numbers you work with
+
+In business you meet four kinds of numbers. Each kind contains the one before it.
+
+| Name | Symbol | Examples | In business |
+|---------------------|:---:|------------------------|---------------------------------------|
+| Natural numbers     | $\mathbb{N}$ | $1, 2, 3, \dots$ | Units sold, number of employees |
+| Integers            | $\mathbb{Z}$ | $\dots, -2, -1, 0, 1, 2, \dots$ | Change in stock, a loss |
+| Rational numbers    | $\mathbb{Q}$ | $\tfrac{3}{4},\ -0.25,\ 19\,\%$ | Prices, shares, rates |
+| Real numbers        | $\mathbb{R}$ | $\sqrt{2},\ \pi,\ 1.06^{1/12}$ | Growth rates, interest over time |
+
+Some books count $0$ as a natural number and some do not. In this course it does not matter.
+
+## Negative numbers
+
+A negative number is an amount below zero: money that flows out, a loss, a fall in stock. The rules for signs are:
+
+$$
+\begin{aligned}
+a + (-b) &= a - b & \qquad (-a)\cdot(-b) &= a\cdot b\\
+a - (-b) &= a + b & \qquad (-a)\cdot b &= -(a\cdot b)
+\end{aligned}
+$$
+
+In words: two minus signs that meet (subtracting a negative, or multiplying two negatives) make a plus.
+
+::: {.callout-note}
+## Worked example: Loop Cycles' bank account
+Loop Cycles starts the month with €2,500 in its bank account. It receives €1,800 from customers, pays €3,100 for used bikes and parts, and then pays €1,450 rent.
+
+$$2500 + 1800 - 3100 - 1450 = -250$$
+
+The account is €250 overdrawn. A negative balance is not an error in the calculation; it is a warning for the business.
+:::
+
+## The order of operations
+
+When an expression contains several operations, you calculate in this order:
+
+1. **Brackets** first, from the innermost outwards.
+2. **Powers and roots.**
+3. **Multiplication and division**, from left to right.
+4. **Addition and subtraction**, from left to right.
+
+You may know this as BODMAS, BIDMAS or PEMDAS; in German schools the rule is often called *Punkt vor Strich*. All of these say the same thing.
+
+::: {.callout-note}
+## Worked example: an invoice with a discount
+A customer buys 3 refurbished bikes at €364 each. Loop Cycles gives a 5 % discount on the bikes and charges €25 for delivery. What is the total?
+
+The discount applies to the bikes only, so the bikes are bracketed together:
+
+$$3 \cdot 364 \cdot (1 - 0.05) + 25 = 1092 \cdot 0.95 + 25 = 1037.40 + 25 = 1062.40$$
+
+The customer pays **€1,062.40**.
+:::
+
+::: {.callout-warning}
+## Common mistake: forgetting the brackets
+Written without brackets, $3 \cdot 364 \cdot 1 - 0.05 + 25$ means "take 0.05 euros off and add 25", which gives €1,116.95. The brackets say what you mean: the discount factor is $1 - 0.05$.
+:::
+
+### Brackets in spreadsheets and code
+
+Spreadsheets, R and Python use the same order of operations, with `*` for multiplication, `/` for division and `^` (spreadsheets, R) or `**` (Python) for powers.
+
+```{.sheet title="The invoice from the worked example"}
+Item | Quantity | Unit price | Discount | Amount
+Refurbished bike | 3 | 364.00 | 5% | =B2*C2*(1-D2) -> 1,037.40
+Delivery | | | | 25.00
+Total | | | | =E2+E3 -> 1,062.40
+```
+
+::: {.panel-tabset group="language"}
+## R
+```r
+3 * 364 * (1 - 0.05) + 25   # 1062.4
+3 * 364 * 1 - 0.05 + 25     # 1116.95  (brackets forgotten)
+```
+## Python
+```python
+3 * 364 * (1 - 0.05) + 25   # 1062.4
+3 * 364 * 1 - 0.05 + 25     # 1116.95  (brackets forgotten)
+```
+:::
+
+::: {.callout-warning}
+## Common mistake: a minus sign in front of a power
+In mathematics, $-2^2 = -(2^2) = -4$, because the power comes first. R and Python follow this rule: `-2^2` in R and `-2**2` in Python both give $-4$. Excel does not: there, `=-2^2` gives $4$, because Excel applies the minus sign first. Other spreadsheet programs may differ, so check yours. The safe habit everywhere is to write brackets: `=-(2^2)` or `=(-2)^2`.
+:::
+
+## Rounding money
+
+Money is rounded to the smallest unit of the currency: to cents (2 decimal places) for euros or dollars, to whole yen for the Japanese yen. The rule is: look at the first digit you drop. If it is 5 or more, round up; otherwise, round down.
+
+| Exact amount | Rounded to cents |
+|-------------:|-----------------:|
+| 69.16        | 69.16            |
+| 17.136       | 17.14            |
+| 2.7349       | 2.73             |
+| 1037.395     | 1037.40          |
+
+**Round only at the end.** If you round in the middle of a calculation, small errors add up. Keep all digits in your calculator, and round the final result.
+
+::: {.callout-tip collapse="true"}
+## Check yourself: click to see the solutions
+1. Calculate $12 - 3 \cdot (4 - 6)$.
+2. Calculate $-3^2 + (-3)^2$.
+3. A customer orders 2 tune-ups at €42 each and 3 inner tubes at €14.40 each. Write one expression for the net total and calculate it.
+
+**Solutions.**
+
+1. Brackets first: $4 - 6 = -2$. Then $3 \cdot (-2) = -6$, and $12 - (-6) = 18$.
+2. $-3^2 = -9$ and $(-3)^2 = 9$, so the sum is $0$.
+3. $2 \cdot 42 + 3 \cdot 14.40 = 84 + 43.20 = 127.20$, so **€127.20**. No brackets are needed, because multiplication comes before addition.
+:::

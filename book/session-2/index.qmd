@@ -1,0 +1,12 @@
+# Overview of Session 2 {#sec-s2}
+
+::: {.callout-important appearance="simple"}
+## Coming soon
+This session's chapters are being written. The plan is below.
+:::
+
+**Theme:** Equations, finding the number you need. How many units until you break even? What price reaches your profit target?
+
+**Planned chapters:** what an equation is; solving linear equations; rearranging a formula; quadratic equations, the quadratic formula and the discriminant; your business: break-even; practice; catch-up sheet.
+
+**Further reading (optional):** @olivier2023, sec. 2.5, pp. 46–56, and sec. 5.2, pp. 157–164; @stitz2013, sec. 2.3, pp. 188–207; @mazur2021, sec. 2.1–2.5, pp. 167–270. In German: @gundlach2024, sec. 1.3, pp. 21–22.

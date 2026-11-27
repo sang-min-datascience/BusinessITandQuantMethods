@@ -1,0 +1,73 @@
+# Practice for Session 1 {#sec-s1-practice}
+
+These questions mix all topics of the session, in the style of the entry quiz and the exam. Use a calculator where you need one, write down your steps, and only then open the solution. Questions marked ★ are a little harder.
+
+::: {.callout-tip collapse="true"}
+## 1. An order with a discount
+A bike shop orders 50 helmets at €25 each (net) and receives an 8 % discount on the order. VAT of 19 % is added to the discounted amount. What is the gross amount of the invoice?
+
+**Solution.** $50 \cdot 25 = 1250$. With the discount: $1250 \cdot 0.92 = 1150$. With VAT: $1150 \cdot 1.19 = 1368.50$. The invoice is **€1,368.50**.
+:::
+
+::: {.callout-tip collapse="true"}
+## 2. Back to the net price
+A customer paid €899 including 19 % VAT for an e-bike. How much of this is VAT?
+
+**Solution.** Net: $\frac{899}{1.19} \approx 755.46$. VAT: $899 - 755.46 = 143.54$, so **€143.54**. (Not $899 \cdot 0.19 = 170.81$: the VAT was calculated on the net price.)
+:::
+
+::: {.callout-tip collapse="true"}
+## 3. Shares of an investment
+Two partners invest in a business in the ratio 2 : 3. The second partner invests €4,500 more than the first. How much does each partner invest?
+
+**Solution.** The ratio 2 : 3 means 5 equal parts, and the second partner has one part more than the first. So one part is €4,500, the first partner invests $2 \cdot 4500 = 9000$ and the second $3 \cdot 4500 = 13\,500$. Check: $13\,500 - 9000 = 4500$. ✓
+:::
+
+::: {.callout-tip collapse="true"}
+## 4. Markup or margin?
+A retailer buys a lamp for €60 and wants a **margin** of 25 % of the net selling price. What must the net price be? What is the markup?
+
+**Solution.** If the margin is 25 % of the price, the cost is the other 75 %: $0.75 \cdot \text{price} = 60$, so the price is $\frac{60}{0.75} = 80$. The markup is $\frac{80 - 60}{60} = \frac{1}{3} \approx 33.3\,\%$.
+:::
+
+::: {.callout-tip collapse="true"}
+## 5. Up and down
+A share price falls by 25 % and then rises by 25 %. Is it back where it started? If not, by how much is it up or down in total?
+
+**Solution.** $0.75 \cdot 1.25 = 0.9375$, so it is **6.25 % below** the starting price.
+:::
+
+::: {.callout-tip collapse="true"}
+## 6. Percent or percentage points?
+A company's share of the market rose from 12 % to 15 %. Describe the change in percentage points and in percent.
+
+**Solution.** 3 percentage points ($15 - 12$), and 25 percent ($\frac{3}{12} = 0.25$).
+:::
+
+::: {.callout-tip collapse="true"}
+## 7. Two years of interest
+€5,000 is saved for two years at 3 % a year, and the interest stays in the account. How much is in the account after two years, and how much of that is interest on interest?
+
+**Solution.** $5000 \cdot 1.03^2 = 5000 \cdot 1.0609 = 5304.50$. Simple interest would be $2 \cdot 150 = 300$, so the interest on interest is $304.50 - 300 = 4.50$, which is $5000 \cdot 0.03^2$.
+:::
+
+::: {.callout-tip collapse="true"}
+## 8. ★ Average growth
+A start-up's monthly revenue grew from €80,000 to €105,800 in two years. What was the average growth rate per year?
+
+**Solution.** $\frac{105\,800}{80\,000} = 1.3225$. Average factor $\sqrt{1.3225} = 1.15$, so **15 % per year**. Check: $80\,000 \cdot 1.15^2 = 105\,800$. ✓
+:::
+
+::: {.callout-tip collapse="true"}
+## 9. ★ Simplify
+Simplify $\dfrac{a^2 - b^2}{a - b}$ (for $a \neq b$) and $\dfrac{(2x)^3 \cdot x^{-1}}{4x}$ (for $x \neq 0$).
+
+**Solution.** With the third binomial formula, $\frac{(a-b)(a+b)}{a-b} = a + b$. And $\frac{8x^3 \cdot x^{-1}}{4x} = \frac{8x^2}{4x} = 2x$.
+:::
+
+::: {.callout-tip collapse="true"}
+## 10. A spreadsheet formula
+In a spreadsheet, the net price is in B2 and the VAT rate in E1. A student writes `=B2*1+E1` to get the gross price. What does the formula calculate, and what is the correct formula?
+
+**Solution.** Multiplication comes first, so it calculates $B2 + E1$: the net price plus 0.19. Correct: `=B2*(1+$E$1)`. The dollar signs keep E1 fixed when the formula is filled down.
+:::

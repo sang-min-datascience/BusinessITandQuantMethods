@@ -1,0 +1,37 @@
+# Spreadsheet basics and functions {#sec-spreadsheet}
+
+Any spreadsheet program works for this course. This appendix lists what you need, and where the programs differ.
+
+## Operators
+
+| Operation | Spreadsheet | R | Python |
+|----------------------|:------:|:------:|:------:|
+| Add, subtract        | `+ -`  | `+ -`  | `+ -`  |
+| Multiply, divide     | `* /`  | `* /`  | `* /`  |
+| Power                | `^`    | `^`    | `**`   |
+| Text join            | `&`    | `paste()` | `+` |
+
+Every spreadsheet formula starts with `=`.
+
+## Cell references
+
+| Written | Name | When filled down or across |
+|---------|------|------------------------------|
+| `B2`    | Relative reference | Row and column change |
+| `$B$2`  | Absolute reference | Nothing changes |
+| `B$2`, `$B2` | Mixed reference | Only the part without `$` changes |
+
+## Decimal comma and list separator
+
+Spreadsheets follow your computer's language settings. With German (or many other European) settings, numbers use a **decimal comma** (`0,19`) and the arguments of a function are separated by a **semicolon**: `=ROUND(B2;2)` instead of `=ROUND(B2,2)`. Function names may also be translated: in German Excel, `ROUND` is `RUNDEN`. This book uses English names, decimal points and commas between arguments.
+
+## Functions used in this book
+
+| Purpose | Excel | LibreOffice Calc | Google Sheets |
+|------------------------|-------------------|------------------|----------------|
+| Round to 2 decimals    | `=ROUND(B2,2)`    | same             | same |
+| Square root            | `=SQRT(B2)`       | same             | same |
+| Power (same as `^`)    | `=POWER(B2,3)`    | same             | same |
+| Sum of a range         | `=SUM(B2:B4)`     | same             | same |
+
+Functions for Sessions 2 to 4 (goal seek, interest and loan functions) will be added with those chapters.
