@@ -15,6 +15,8 @@ The four sessions
 
 We are not doing mathematics for its own sake. Every topic in this book is here because it helps you make a business decision: what to charge, how many units you must sell to break even, whether a loan is affordable, whether to lease or buy. That is why every chapter starts from a business question and why your group runs a business of its own from the first session.
 
+Some of what you will find here may feel very basic, and for some of you it will be. That is on purpose. You come from many different countries and school systems, and the later modules of this programme (finance, accounting, statistics, economics) all assume the same mathematical toolkit. This block makes sure that everyone starts from the same baseline, so that afterwards we can all dive deeper into the business topics together. If something feels easy, enjoy it, and use the time to help someone in your group: explaining it is the best way to make sure you really know it.
+
 You do not need to love mathematics to do well here. You need to work through the session's chapters before class, try the practice questions, and ask when something is unclear. Many of you come from different school systems, so everything starts from the basics.
 
 ## A word from your instructor
