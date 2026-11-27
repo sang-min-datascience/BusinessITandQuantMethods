@@ -65,7 +65,14 @@ $(a + b)^2 \neq a^2 + b^2$. The term $2ab$ is easy to forget. Test with $a = 3$,
 ## Worked example: interest over two years
 Loop Cycles leaves €1,000 in a savings account at 5 % a year for two years. With the growth factor from @sec-percentages and the first binomial formula:
 
-$$1000 \cdot (1 + 0.05)^2 = 1000 \cdot (1 + 2 \cdot 0.05 + 0.05^2) = 1000 \cdot (1 + 0.10 + 0.0025) = 1102.50$$
+$$
+\begin{aligned}
+1000 \cdot (1 + 0.05)^2 &= 1000 \cdot (1 + 2 \cdot 0.05 + 0.05^2)\\
+&= 1000 \cdot (1 + 0.10 + 0.0025)\\
+&= 1000 + 100 + 2.50\\
+&= 1102.50
+\end{aligned}
+$$
 
 The three terms tell a story: €1,000 is the original amount, €100 is two years of interest on it, and the last €2.50 is **interest on the interest**. That small extra is the beginning of compound interest (Session 4).
 :::
