@@ -1,12 +1,41 @@
 # Overview of Session 2 {#sec-s2}
 
-::: {.callout-important appearance="simple"}
-## Coming soon
-This session's chapters are being written. The plan is below.
+In Session 1 you calculated forward: from cost to price, from net to gross. Business questions often run the other way round. You know the result you need (no loss, a target profit, a revenue goal) and you are looking for the number that gets you there: how many units, which price. That is what equations are for.
+
+::: {.goals}
+Goals
+
+After this session you can:
+
+- turn a business question into an equation and say what the unknown stands for;
+- solve linear equations step by step, and check the solution;
+- rearrange a formula to get the variable you need;
+- solve quadratic equations with factorising and with the quadratic formula, and use the discriminant to tell how many solutions there are;
+- calculate break-even volumes and target prices, and judge whether an answer makes sense.
 :::
 
-**Theme:** Equations, finding the number you need. How many units until you break even? What price reaches your profit target?
+## Before class
 
-**Planned chapters:** what an equation is; solving linear equations; rearranging a formula; quadratic equations, the quadratic formula and the discriminant; your business: break-even; practice; catch-up sheet.
+- [ ] Work through the chapters of this session: @sec-equations to @sec-quadratic (about 75 minutes, videos included).
+- [ ] Try the questions in @sec-s2-practice (about 20 minutes).
+- [ ] Take **Entry quiz 2** on Moodle before the deadline.
 
-**Further reading (optional):** @olivier2023, sec. 2.5, pp. 46–56, and sec. 5.2, pp. 157–164; @stitz2013, sec. 2.3, pp. 188–207; @mazur2021, sec. 2.1–2.5, pp. 167–270. In German: @gundlach2024, sec. 1.3, pp. 21–22.
+**If you want more explanation or practice** (optional), the same topics are covered in @olivier2023, sec. 2.5, pp. 46–56, and sec. 5.2, pp. 157–164, and in @stitz2013, sec. 2.3, pp. 188–207; also in @mazur2021, sec. 2.1–2.5, pp. 167–270. In German: @gundlach2024, sec. 1.3, pp. 21–22.
+
+## In class
+
+| Time | What happens |
+|-------------|------------------------------------------------------------|
+| 0:00–0:20   | The quiz questions most people found hard |
+| 0:20–1:20   | Problem set A in your group: your break-even volume and the price for a target profit, by hand |
+| 1:20–1:35   | Break |
+| 1:35–2:35   | Problem set B: a profit model with two break-even points, and what it means when there is no solution |
+| 2:35–3:00   | Tool moment (@sec-s2-business), groups present, exit question |
+
+Could not prepare? Start with the [catch-up sheet](catch-up.qmd) and join your group for problem set B.
+
+## Videos in this session
+
+1. What an equation is, and how to solve linear equations (@sec-equations and @sec-linear)
+2. Rearranging formulas (@sec-rearranging)
+3. Quadratic equations, the quadratic formula and the discriminant (@sec-quadratic)

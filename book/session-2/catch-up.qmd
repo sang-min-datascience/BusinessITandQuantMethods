@@ -1,0 +1,54 @@
+# Catch-up sheet for Session 2 {#sec-s2-catchup}
+
+::: {.voice}
+Could not prepare? You are in good company. Give this page 30 to 40 minutes, and you will be able to follow your group in the second half. Equations look scary on paper, but most of the work is the same three moves again and again.
+:::
+
+## The essentials on one page
+
+| Topic | What to remember |
+|---------------------|----------------------------------------------------------|
+| Solving | Do the same to both sides. Never divide by zero. Always check by putting the solution back in. |
+| Linear recipe | Brackets out, fractions out, unknowns to one side, divide. |
+| Profit | $P = (p - v)\,q - F$ (price minus variable cost, times quantity, minus fixed costs) |
+| Break-even | $q = \dfrac{F}{p - v}$. Round **up** if you need whole units. |
+| Target profit | $q = \dfrac{P + F}{p - v}$ |
+| Rearranging | Same steps as solving, but with letters. Test with numbers if unsure. |
+| Quadratic | Standard form $a x^2 + b x + c = 0$, then $x_{1,2} = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ |
+| Discriminant | $D = b^2 - 4ac$: $D > 0$ two solutions, $D = 0$ one, $D < 0$ none |
+| Interpretation | Check every solution against the business: negative quantities, prices below cost? |
+
+## Two worked examples
+
+::: {.callout-note}
+## Example 1: break-even and target profit
+A bakery stall has fixed costs of €1,200 per month. A loaf costs €1.50 to bake and sells for €4.
+
+1. Contribution margin: $4 - 1.50 = 2.50$
+2. Break-even: $\frac{1200}{2.50} = 480$ loaves per month
+3. For a profit of €800: $\frac{800 + 1200}{2.50} = 800$ loaves
+:::
+
+::: {.callout-note}
+## Example 2: a quadratic equation
+Solve $2x^2 - 8x - 10 = 0$.
+
+1. Divide by 2: $x^2 - 4x - 5 = 0$, so $a = 1$, $b = -4$, $c = -5$.
+2. $D = (-4)^2 - 4 \cdot 1 \cdot (-5) = 16 + 20 = 36$, $\sqrt{D} = 6$
+3. $x = \frac{4 \pm 6}{2}$, so $x = 5$ or $x = -1$.
+4. Check: $5^2 - 4 \cdot 5 - 5 = 0$. ✓
+:::
+
+## Three warm-up tasks
+
+1. Solve $4x - 7 = 2x + 5$.
+2. A stall has fixed costs of €900 per month, a variable cost of €9 and a price of €15 per item. What is the break-even volume?
+3. Solve $x^2 - 6x + 8 = 0$.
+
+::: {.hidden-solution title="Show answers to the warm-up tasks"}
+1. $2x = 12$, so $x = 6$.
+2. $\frac{900}{15 - 9} = \frac{900}{6} = 150$ items.
+3. $D = 36 - 32 = 4$, $x = \frac{6 \pm 2}{2}$, so $x = 4$ or $x = 2$.
+:::
+
+Done? Join your group and tell them which step you found hardest. Then go back to @sec-linear or @sec-quadratic for anything that still feels unclear.

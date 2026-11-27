@@ -34,6 +34,13 @@ book:
     - part: "Session 2: Equations"
       chapters:
         - session-2/index.qmd
+        - session-2/equations.qmd
+        - session-2/linear.qmd
+        - session-2/rearranging.qmd
+        - session-2/quadratic.qmd
+        - session-2/your-business.qmd
+        - session-2/practice.qmd
+        - session-2/catch-up.qmd
     - part: "Session 3: Functions"
       chapters:
         - session-3/index.qmd

@@ -16,6 +16,18 @@ All formulas of the block on one page, collected session by session. Use it to r
 | Average growth rate | $p = \left(\dfrac{\text{end}}{\text{start}}\right)^{1/n} - 1$ |
 | Binomial formulas | $(a + b)^2 = a^2 + 2ab + b^2$, $\ (a - b)^2 = a^2 - 2ab + b^2$, $\ (a + b)(a - b) = a^2 - b^2$ |
 
-## Sessions 2 to 4
+## Session 2: Equations
+
+| Topic | Formula |
+|---------------------|--------------------------------------------------|
+| Cost, revenue, profit | $C = F + v\,q$, $\quad R = p\,q$, $\quad P = R - C = (p - v)\,q - F$ |
+| Contribution margin | $p - v$ |
+| Break-even volume | $q = \dfrac{F}{p - v}$ |
+| Volume for a target profit $P$ | $q = \dfrac{P + F}{p - v}$ |
+| Quadratic formula | $a x^2 + b x + c = 0 \ \Rightarrow\ x_{1,2} = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ |
+| *pq*-formula | $x^2 + p x + q = 0 \ \Rightarrow\ x_{1,2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2 - q}$ |
+| Discriminant | $D = b^2 - 4ac$: two solutions if $D > 0$, one if $D = 0$, none if $D < 0$ |
+
+## Sessions 3 and 4
 
 To be added as the chapters are written.

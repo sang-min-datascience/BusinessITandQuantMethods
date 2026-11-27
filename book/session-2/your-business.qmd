@@ -1,0 +1,90 @@
+# Your business: break-even and target prices {#sec-s2-business}
+
+In Session 1 your group set its prices. Now you find out how much you have to sell for those prices to work, and which price you would need for the profit you hope for.
+
+::: {.business}
+Your business, step 2
+
+**Before class (as a group, 15 minutes):**
+
+1. Estimate your **monthly fixed costs**: rent, insurance, software, website, any salaries you pay regardless of sales. Write down each item; a rough estimate is fine.
+2. Pick your **main product** from your price sheet. Note its net price and its variable cost per unit.
+
+**In class (problem set A):**
+
+3. Set up the profit equation and calculate your **break-even volume**. Round sensibly.
+4. Choose a monthly **target profit** and find the volume you need for it.
+5. Assume you can realistically sell only 80 % of that volume. Which **price** would you need instead?
+6. Discuss: are the numbers realistic? Which assumption would you check first?
+:::
+
+## Loop Cycles' numbers
+
+| Item | Value |
+|-----------------------------------|----------:|
+| Fixed costs per month             | €2,600 |
+| Net price per refurbished bike     | €364 |
+| Variable cost per bike             | €260 |
+| Contribution margin                | €104 |
+| Break-even volume                  | 25 bikes |
+| Volume for €1,560 profit           | 40 bikes |
+| Price for €1,000 profit at 30 bikes | €380 |
+
+## Tool moment: goal seek in a spreadsheet
+
+You solved these equations by hand. A spreadsheet can find the answer by trial and error: its **goal seek** tool changes one input cell until a formula cell reaches the value you want.
+
+```{.sheet title="Break-even with goal seek: set B6 to 0 by changing B4" highlight="B4 B6" header="false"}
+Fixed costs | 2600
+Price | 364
+Variable cost | 260
+Quantity | 25
+Contribution margin | =B2-B3 -> 104
+Profit | =B4*B5-B1 -> 0
+Break-even (formula) | =B1/(B2-B3) -> 25
+```
+
+1. Put any number in B4, for example 10. The profit in B6 is then negative.
+2. Open goal seek:
+   - **Excel:** Data > What-If Analysis > Goal Seek (German Excel: *Daten > Was-wäre-wenn-Analyse > Zielwertsuche*)
+   - **LibreOffice Calc:** Tools > Goal Seek (German: *Extras > Zielwertsuche*)
+   - **Google Sheets** has no built-in goal seek. Use the formula in B7, or solve by hand.
+3. Set cell **B6** to value **0** by changing cell **B4**. The spreadsheet finds 25.
+
+Row 7 shows the other way: the break-even formula from @sec-rearranging, typed in directly. Goal seek is useful when you cannot (or do not want to) rearrange the formula, for example with the quadratic profit model, where goal seek finds one of the two break-even points depending on where it starts.
+
+::: {.callout-warning}
+## Common mistake: trusting goal seek blindly
+Goal seek finds **one** solution near your starting value, and it may stop at something like 24.9999. With two break-even points, start once at 10 and once at 60 to find both. And if there is no solution, goal seek simply reports that it could not find one. Your discriminant tells you why.
+:::
+
+## Tool moment: the same in R and Python
+
+Both languages can find the number that makes a function zero. For quadratic equations there is also a direct way.
+
+::: {.panel-tabset group="language"}
+## R
+```r
+# Break-even: where is 104 * q - 2600 equal to zero?
+profit <- function(q) 104 * q - 2600
+uniroot(profit, lower = 0, upper = 100)$root   # 25
+
+# Two break-even points of q^2 - 85 q + 1300 = 0
+# (polyroot wants the coefficients from the constant upwards)
+Re(polyroot(c(1300, -85, 1)))                  # 20 65
+```
+## Python
+```python
+# Break-even: where is 104 * q - 2600 equal to zero?
+from scipy.optimize import brentq
+profit = lambda q: 104 * q - 2600
+brentq(profit, 0, 100)                         # 25.0
+
+# Two break-even points of q^2 - 85 q + 1300 = 0
+# (numpy wants the coefficients from the highest power down)
+import numpy as np
+np.roots([1, -85, 1300])                       # array([65., 20.])
+```
+:::
+
+Like goal seek, `uniroot` and `brentq` search between two limits you give them (here 0 and 100), so you still need a rough idea where the answer lies. Your hand calculation gives you that idea.

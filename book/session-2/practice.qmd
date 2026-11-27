@@ -1,0 +1,93 @@
+# Practice for Session 2 {#sec-s2-practice}
+
+These questions mix all topics of the session, in the style of the entry quiz and the exam. Write down what your unknown stands for, solve step by step, check your answer, and only then open the solution. Questions marked ★ are a little harder.
+
+::: {.callout-tip}
+## 1. Brackets first
+Solve $5(x - 2) - 3(x + 1) = 7$.
+
+::: {.hidden-solution}
+$5x - 10 - 3x - 3 = 7$, so $2x - 13 = 7$, $2x = 20$, $x = 10$. Check: $5 \cdot 8 - 3 \cdot 11 = 40 - 33 = 7$. ✓
+:::
+:::
+
+::: {.callout-tip}
+## 2. Break-even
+An online shop for phone cases has fixed costs of €3,000 per month. It buys each case for €4 and sells it for €12 (net). How many cases must it sell per month to break even?
+
+::: {.hidden-solution}
+Contribution margin $12 - 4 = 8$. Break-even $\frac{3000}{8} = 375$ cases per month.
+:::
+:::
+
+::: {.callout-tip}
+## 3. Target profit
+The same shop wants a monthly profit of €1,800. How many cases must it sell?
+
+::: {.hidden-solution}
+$8q - 3000 = 1800$, so $8q = 4800$ and $q = 600$ cases.
+:::
+:::
+
+::: {.callout-tip}
+## 4. The price you need
+A café has fixed costs of €4,000 per month and sells about 1,500 coffees a month. Each coffee costs €0.80 to make. Which net price per coffee gives a monthly profit of €2,000?
+
+::: {.hidden-solution}
+$1500\,(p - 0.80) - 4000 = 2000$, so $1500\,(p - 0.80) = 6000$, $p - 0.80 = 4$, $p = 4.80$. The café needs **€4.80 net** per coffee.
+:::
+:::
+
+::: {.callout-tip}
+## 5. Rearranging
+Simple interest is $Z = K \cdot i \cdot t$ (interest = capital × rate × years). Solve for $i$. Which rate turns €5,000 into €300 of interest in 2 years?
+
+::: {.hidden-solution}
+$i = \frac{Z}{K \cdot t} = \frac{300}{5000 \cdot 2} = 0.03 = 3\,\%$.
+:::
+:::
+
+::: {.callout-tip}
+## 6. A reduced VAT rate
+In Germany, books carry a reduced VAT rate of 7 %. A book costs €53.50 including VAT. Set up an equation for the net price and solve it.
+
+::: {.hidden-solution}
+$1.07\,x = 53.50$, so $x = \frac{53.50}{1.07} = 50$. The net price is **€50**.
+:::
+:::
+
+::: {.callout-tip}
+## 7. Quadratic formula
+Solve $x^2 - 9x + 14 = 0$.
+
+::: {.hidden-solution}
+$D = 81 - 56 = 25$, $\sqrt{D} = 5$, $x = \frac{9 \pm 5}{2}$, so $x = 7$ or $x = 2$.
+:::
+:::
+
+::: {.callout-tip}
+## 8. ★ Two break-even points
+A firm's monthly profit is $P(q) = -0.5q^2 + 40q - 600$ (in euros, $q$ in units). Between which volumes does it make a profit?
+
+::: {.hidden-solution}
+$-0.5q^2 + 40q - 600 = 0$, multiply by $-2$: $q^2 - 80q + 1200 = 0$. $D = 6400 - 4800 = 1600$, $\sqrt{D} = 40$, $q = \frac{80 \pm 40}{2}$, so $q = 20$ or $q = 60$. The firm makes a profit between **20 and 60 units**.
+:::
+:::
+
+::: {.callout-tip}
+## 9. ★ An impossible target
+Can the firm from question 8 make a profit of €300 per month?
+
+::: {.hidden-solution}
+$-0.5q^2 + 40q - 600 = 300$ gives $q^2 - 80q + 1800 = 0$. $D = 6400 - 7200 = -800 < 0$: no solution. A profit of €300 is not possible. (The highest possible profit is €200, at $q = 40$.)
+:::
+:::
+
+::: {.callout-tip}
+## 10. ★ Two prices, one sensible
+At a price of $p$ euros, a shop sells $q = 200 - 4p$ units per week. Each unit costs the shop €22. Which price gives weekly revenue of €2,400? Which of the solutions makes business sense?
+
+::: {.hidden-solution}
+$p\,(200 - 4p) = 2400$ gives $-4p^2 + 200p - 2400 = 0$, or $p^2 - 50p + 600 = 0$. $D = 2500 - 2400 = 100$, $p = \frac{50 \pm 10}{2}$, so $p = 30$ or $p = 20$. At €20 the shop sells below its cost of €22, so only **€30** makes sense (selling 80 units).
+:::
+:::

@@ -34,4 +34,14 @@ Spreadsheets follow your computer's language settings. With German (or many othe
 | Power (same as `^`)    | `=POWER(B2,3)`    | same             | same |
 | Sum of a range         | `=SUM(B2:B4)`     | same             | same |
 
-Functions for Sessions 2 to 4 (goal seek, interest and loan functions) will be added with those chapters.
+## Goal seek (Session 2)
+
+Goal seek changes one input cell until a formula cell reaches a target value.
+
+| Program | Where to find it |
+|------------------|--------------------------------------------------|
+| Excel            | Data > What-If Analysis > Goal Seek (German: *Daten > Was-wäre-wenn-Analyse > Zielwertsuche*) |
+| LibreOffice Calc | Tools > Goal Seek (German: *Extras > Zielwertsuche*) |
+| Google Sheets    | No built-in goal seek; type the solved formula instead |
+
+Functions for Sessions 3 and 4 (interest and loan functions) will be added with those chapters.

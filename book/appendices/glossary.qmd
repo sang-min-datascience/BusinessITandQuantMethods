@@ -18,7 +18,16 @@ Useful if you read the German books or meet these terms in German-speaking compa
 | Gleichung, Ungleichung | Equation, inequality |
 | Funktion, Steigung, Achsenabschnitt | Function, slope, intercept |
 | Kosten, Erlös (Umsatz), Gewinn | Cost, revenue, profit |
-| Gewinnschwelle | Break-even point |
+| Gewinnschwelle (Break-even-Punkt) | Break-even point |
+| Fixkosten, variable Kosten | Fixed costs, variable costs |
+| Deckungsbeitrag | Contribution margin |
+| Lösung, Unbekannte | Solution, unknown |
+| Äquivalenzumformung | Equivalence transformation |
+| Formel umstellen | Rearrange (transpose) a formula |
+| Quadratische Gleichung | Quadratic equation |
+| Mitternachtsformel, pq-Formel | Quadratic formula |
+| Diskriminante | Discriminant |
+| Zielwertsuche | Goal seek |
 | Zins, Zinseszins | Interest, compound interest |
 | Barwert, Endwert | Present value, future value |
 | Abschreibung (linear, degressiv) | Depreciation (straight-line, declining-balance) |

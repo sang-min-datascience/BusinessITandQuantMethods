@@ -1,0 +1,166 @@
+# Linear equations in business {#sec-linear}
+
+::: {.goals}
+Goals
+
+- Solve linear equations with brackets and fractions.
+- Set up and solve a break-even equation, and explain the contribution margin.
+- Find the volume or the price for a target profit.
+- Round answers in a way that makes business sense.
+:::
+
+The video for this chapter is the second half of **What an equation is, and how to solve linear equations** in @sec-equations.
+
+## Linear equations
+
+An equation is **linear** if the unknown appears only to the first power: no $q^2$, no $\sqrt{q}$, no $q$ in a denominator. Every linear equation can be brought into the form $a \cdot x = b$, and if $a \neq 0$ its only solution is $x = \frac{b}{a}$.
+
+A recipe that always works:
+
+1. Remove brackets by multiplying out.
+2. Remove fractions by multiplying both sides by a common denominator.
+3. Collect all terms with the unknown on one side and all numbers on the other.
+4. Divide by the number in front of the unknown.
+5. Check by putting the solution back in.
+
+::: {.callout-note}
+## Worked example: brackets and fractions
+Solve $\frac{x}{4} + \frac{x - 2}{6} = 3$.
+
+$$
+\begin{aligned}
+\frac{x}{4} + \frac{x - 2}{6} &= 3 &&\mid \cdot 12\\
+3x + 2(x - 2) &= 36 &&\text{(multiply out)}\\
+3x + 2x - 4 &= 36 &&\mid +4\\
+5x &= 40 &&\mid :5\\
+x &= 8
+\end{aligned}
+$$
+
+Check: $\frac{8}{4} + \frac{6}{6} = 2 + 1 = 3$. ✓ The factor 12 is the smallest number that both 4 and 6 divide.
+:::
+
+## Break-even: when does the business stop losing money?
+
+Loop Cycles has **fixed costs** of €2,600 per month: rent, insurance, tools and the website. They have to be paid whether it sells zero bikes or fifty. Each refurbished bike has **variable costs** of €260 (buying the bike, parts and work) and sells for €364 net (@sec-s1-business). Let $q$ be the number of bikes sold per month.
+
+$$
+\begin{aligned}
+\text{Revenue:}\quad R &= 364\,q\\
+\text{Cost:}\quad C &= 2600 + 260\,q\\
+\text{Profit:}\quad P &= R - C = 364\,q - (2600 + 260\,q) = 104\,q - 2600
+\end{aligned}
+$$
+
+The **break-even point** is the volume at which profit is exactly zero:
+
+$$
+\begin{aligned}
+104\,q - 2600 &= 0 &&\mid +2600\\
+104\,q &= 2600 &&\mid :104\\
+q &= 25
+\end{aligned}
+$$
+
+Loop Cycles breaks even at **25 bikes per month**. Below that it makes a loss, above it a profit.
+
+The number 104 has a name: it is the **contribution margin** per unit, the price minus the variable cost, $p - v = 364 - 260$. Each bike sold "contributes" €104 towards the fixed costs. Once 25 bikes have paid off the €2,600, every further bike adds €104 of profit. In general:
+
+$$q_{\text{break-even}} = \frac{F}{p - v}$$
+
+::: {.callout-warning}
+## Common mistake: forgetting the brackets around the cost
+$364\,q - 2600 + 260\,q$ is wrong: the minus sign must apply to the whole cost, $-(2600 + 260\,q) = -2600 - 260\,q$.
+:::
+
+::: {.callout-note}
+## Worked example: an answer that is not a whole number
+If the fixed costs rose to €2,800, the break-even volume would be $q = \frac{2800}{104} \approx 26.92$. Loop Cycles cannot sell 26.92 bikes. With 26 bikes it still makes a small loss, so it needs **27 bikes** to break even. When the unknown counts whole things and you need to reach a target, **round up**.
+:::
+
+## Target profit: how many, or at what price?
+
+The same equation answers other questions if you set the profit to a target instead of zero.
+
+::: {.callout-note}
+## Worked example: volume for a target profit
+How many bikes must Loop Cycles sell to make a profit of €1,560 per month?
+
+$$
+\begin{aligned}
+104\,q - 2600 &= 1560 &&\mid +2600\\
+104\,q &= 4160 &&\mid :104\\
+q &= 40
+\end{aligned}
+$$
+
+**40 bikes per month.** Check: $40 \cdot 104 - 2600 = 4160 - 2600 = 1560$. ✓
+:::
+
+::: {.callout-note}
+## Worked example: price for a target profit
+Realistically, the workshop can refurbish about 30 bikes a month. Which price $p$ would give a profit of €1,000 at that volume? Now the price is the unknown:
+
+$$
+\begin{aligned}
+30\,(p - 260) - 2600 &= 1000 &&\mid +2600\\
+30\,(p - 260) &= 3600 &&\mid :30\\
+p - 260 &= 120 &&\mid +260\\
+p &= 380
+\end{aligned}
+$$
+
+Loop Cycles would have to charge **€380 net** per bike, €16 more than now. Whether customers will pay that is a different question, and it is one that mathematics alone cannot answer.
+:::
+
+::: {.voice}
+This is my favourite kind of result: the maths gives a clear number, and then the real discussion starts. Would customers pay €380? Could the workshop do 35 bikes instead? A good equation does not make the decision for you. It tells you exactly what you would have to believe for a plan to work.
+:::
+
+## More linear equations from everyday business
+
+::: {.callout-note}
+## Worked example: salary with commission
+A sales job pays a base salary of €2,000 per month plus 5 % commission on sales. What sales $s$ are needed to earn €2,600?
+
+$$2000 + 0.05\,s = 2600 \quad\Longrightarrow\quad 0.05\,s = 600 \quad\Longrightarrow\quad s = \frac{600}{0.05} = 12\,000$$
+
+Sales of **€12,000** per month.
+:::
+
+::: {.callout-note}
+## Worked example: VAT as an equation
+In Session 1 you learnt the rule "net = gross : 1.19". It is just the solution of an equation. If a customer paid €595 including VAT, the net price $x$ satisfies
+
+$$1.19\,x = 595 \quad\Longrightarrow\quad x = \frac{595}{1.19} = 500$$
+
+Many "rules" you have memorised are equations that someone solved for you once. If you forget the rule, set up the equation and solve it yourself.
+:::
+
+::: {.callout-tip}
+## Check yourself
+
+1. Solve $3(x - 4) = x + 6$.
+
+   ::: {.hidden-solution}
+   $3x - 12 = x + 6$, so $2x = 18$ and $x = 9$. Check: $3 \cdot 5 = 15 = 9 + 6$. ✓
+   :::
+
+2. A food truck has fixed costs of €1,800 per month. Each meal costs €4 to make and sells for €10 (net). What is the break-even volume?
+
+   ::: {.hidden-solution}
+   Contribution margin $10 - 4 = 6$. Break-even: $\frac{1800}{6} = 300$ meals per month.
+   :::
+
+3. With the same food truck, how many meals are needed for a profit of €2,400?
+
+   ::: {.hidden-solution}
+   $6q - 1800 = 2400$, so $6q = 4200$ and $q = 700$ meals.
+   :::
+
+4. A course provider's fixed costs are €5,000, the variable cost per participant is €35 and the price is €120. How many participants are needed to break even?
+
+   ::: {.hidden-solution}
+   $\frac{5000}{120 - 35} = \frac{5000}{85} \approx 58.8$, so **59 participants** (round up).
+   :::
+:::

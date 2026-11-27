@@ -1,0 +1,97 @@
+# What an equation is {#sec-equations}
+
+::: {.goals}
+Goals
+
+- Explain what an equation, an unknown and a solution are.
+- Transform an equation without changing its solutions.
+- Check a solution by putting it back in.
+:::
+
+::: {.video minutes="10"}
+What an equation is, and how to solve linear equations
+:::
+
+## A statement that can be true or false
+
+An **equation** says that two expressions have the same value:
+
+$$104\,q = 2600$$
+
+The letter $q$ is the **unknown** (or variable). A **solution** is a value for $q$ that makes the statement true. Here, $q = 25$ is a solution, because $104 \cdot 25 = 2600$. The value $q = 20$ is not, because $104 \cdot 20 = 2080 \neq 2600$.
+
+In business problems, letters usually stand for something concrete, and it helps to choose letters that remind you of it:
+
+| Letter | Usually stands for |
+|:------:|---------------------------------|
+| $q$ or $x$ | Quantity (units produced or sold) |
+| $p$    | Price per unit |
+| $c$ or $v$ | Variable cost per unit |
+| $F$    | Fixed costs |
+| $R$, $C$, $P$ | Revenue, cost, profit |
+
+**Before you solve anything, write down what the unknown stands for and in which unit.** "Let $q$ be the number of bikes sold per month" turns a vague question into a precise one, and it tells you at the end whether your answer makes sense.
+
+## Balancing the scales
+
+Think of an equation as a balance. You may do anything to it, as long as you do **the same thing to both sides**. Then the balance stays level and the solutions do not change. These steps are called **equivalence transformations**:
+
+- add or subtract the same number or term on both sides;
+- multiply or divide both sides by the same number, **as long as it is not zero**.
+
+The aim is to get the unknown alone on one side. We write each step on a new line and note on the right what we did:
+
+$$
+\begin{aligned}
+3x + 7 &= 22 &&\mid -7\\
+3x &= 15 &&\mid :3\\
+x &= 5
+\end{aligned}
+$$
+
+**Check:** $3 \cdot 5 + 7 = 22$. ✓ Checking takes ten seconds, so always do it.
+
+::: {.callout-warning}
+## Common mistake: doing something to only one side or one term
+From $3x + 7 = 22$, dividing only the $3x$ by 3 gives $x + 7 = 22$, which is wrong. If you divide, divide **every term on both sides**: $\frac{3x}{3} + \frac{7}{3} = \frac{22}{3}$. It is usually easier to move the constant first, as above.
+:::
+
+::: {.callout-warning}
+## Common mistake: dividing by zero, or by something that could be zero
+Never divide by an expression that could be zero, such as $(p - 260)$ when you do not yet know $p$. Dividing by zero is not defined, and dividing by a letter can make you lose solutions. You will see this in @sec-quadratic.
+:::
+
+## How many solutions?
+
+Most equations in this course have exactly one solution, but not all:
+
+| Case | Example | What happens |
+|---------------|--------------------------|--------------------------------------|
+| One solution  | $3x + 7 = 22$            | $x = 5$ |
+| No solution   | $2x + 1 = 2x + 5$        | Subtracting $2x$ gives $1 = 5$, which is false for every $x$. |
+| Infinitely many | $2(x + 3) = 2x + 6$   | Multiplying out gives $6 = 6$, which is true for every $x$. |
+| Two solutions | $x^2 = 9$                | $x = 3$ or $x = -3$ (see @sec-quadratic) |
+
+In business, "no solution" is a real answer. If an equation for the break-even volume has no solution, the business can never cover its costs with this price, and that is important news.
+
+::: {.callout-tip}
+## Check yourself
+
+1. Is $x = 4$ a solution of $5x - 3 = 2x + 9$?
+
+   ::: {.hidden-solution}
+   Left: $5 \cdot 4 - 3 = 17$. Right: $2 \cdot 4 + 9 = 17$. Both sides are equal, so yes.
+   :::
+
+2. Solve $7 - 2x = 15$.
+
+   ::: {.hidden-solution}
+   $-2x = 8$ (subtract 7), so $x = -4$ (divide by $-2$). Check: $7 - 2 \cdot (-4) = 7 + 8 = 15$. ✓
+   :::
+
+3. How many solutions does $4(x - 1) = 4x - 1$ have?
+
+   ::: {.hidden-solution}
+   Multiplying out: $4x - 4 = 4x - 1$. Subtracting $4x$ gives $-4 = -1$, which is false. No solution.
+   :::
+:::

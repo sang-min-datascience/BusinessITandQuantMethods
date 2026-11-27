@@ -1,0 +1,116 @@
+# Rearranging formulas {#sec-rearranging}
+
+::: {.goals}
+Goals
+
+- Rearrange a formula so that a different variable stands alone.
+- Use the same steps as for equations with numbers, keeping letters as letters.
+- Recognise when a formula has to be rearranged with a power or a root.
+:::
+
+::: {.video minutes="9"}
+Rearranging formulas
+:::
+
+## One formula, many questions
+
+A formula connects several quantities. The markup formula from Session 1 connects the price $p$, the cost $c$ and the markup rate $m$:
+
+$$p = c\,(1 + m)$$
+
+Written like this, it answers "what is the price?". But a business may also ask "what is the highest cost I can accept?" or "which markup am I actually charging?". Each question needs the formula solved for a different letter. **Rearranging** (or *transposing*) a formula uses exactly the same balancing steps as solving an equation; you just keep the other letters as they are.
+
+::: {.callout-note}
+## Worked example: three versions of the markup formula
+Start from $p = c\,(1 + m)$.
+
+**Solve for $c$** (divide both sides by $1 + m$):
+$$c = \frac{p}{1 + m}$$
+A shop that wants to sell a bike for €364 with a markup of 40 % can pay at most $\frac{364}{1.40} = 260$ euros for it.
+
+**Solve for $m$:**
+$$
+\begin{aligned}
+p &= c\,(1 + m) &&\mid :c\\
+\frac{p}{c} &= 1 + m &&\mid -1\\
+m &= \frac{p}{c} - 1
+\end{aligned}
+$$
+A tune-up that costs €28 and sells for €42 has a markup of $\frac{42}{28} - 1 = 0.5 = 50\,\%$.
+:::
+
+::: {.callout-tip appearance="simple"}
+## A trick when you get lost
+If you are unsure about a step, try it with numbers first. Does $p = c\,(1 + m)$ really become $c = \frac{p}{1 + m}$? Take $c = 100$, $m = 0.2$: then $p = 120$, and $\frac{120}{1.2} = 100$. ✓
+:::
+
+## Formulas with brackets and several terms
+
+::: {.callout-note}
+## Worked example: break-even for any business
+Profit is $P = (p - v)\,q - F$. Solve for $q$:
+
+$$
+\begin{aligned}
+P &= (p - v)\,q - F &&\mid +F\\
+P + F &= (p - v)\,q &&\mid :(p - v)\\
+q &= \frac{P + F}{p - v}
+\end{aligned}
+$$
+
+For $P = 0$ this is the break-even formula $\frac{F}{p - v}$ from @sec-linear. Note the condition: we may only divide by $p - v$ if it is not zero. If the price equals the variable cost, there is no contribution margin, and no volume will ever cover the fixed costs.
+:::
+
+::: {.callout-warning}
+## Common mistake: "cancelling" across a plus sign
+From $q = \frac{P + F}{p - v}$ you **cannot** cancel to get $\frac{P}{p} + \frac{F}{-v}$ or anything similar. A fraction can only be split along the numerator: $\frac{P + F}{p - v} = \frac{P}{p - v} + \frac{F}{p - v}$. The denominator stays whole.
+:::
+
+## Formulas with powers
+
+Some formulas contain the unknown in a power. You undo a power with a root, and you already know the tool from Session 1.
+
+::: {.callout-note}
+## Worked example: compound growth, solved three ways
+An amount $K_0$ that grows by the rate $i$ per year for $n$ years becomes
+
+$$K_n = K_0\,(1 + i)^n$$
+
+This formula is the heart of Session 4. It can be rearranged in three useful ways:
+
+| Question | Solve for | Result |
+|------------------------------------------|:-----:|-------------------------------------|
+| How much will it be worth?              | $K_n$ | $K_n = K_0\,(1 + i)^n$ (as given) |
+| How much must I invest today?           | $K_0$ | $K_0 = \dfrac{K_n}{(1 + i)^n}$ |
+| Which yearly rate gets me there?        | $i$   | $i = \left(\dfrac{K_n}{K_0}\right)^{1/n} - 1$ |
+
+The last line is the average growth rate from @sec-powers. The second line has a name you will meet again: the **present value**. Solving for $n$ ("how many years?") needs logarithms, which come in Session 3.
+:::
+
+::: {.callout-tip}
+## Check yourself
+
+1. Solve $\text{gross} = \text{net} \cdot (1 + t)$ for the VAT rate $t$.
+
+   ::: {.hidden-solution}
+   Divide by net: $\frac{\text{gross}}{\text{net}} = 1 + t$, so $t = \frac{\text{gross}}{\text{net}} - 1$.
+   :::
+
+2. Revenue is $R = p \cdot q$. Solve for $p$ and explain what it means.
+
+   ::: {.hidden-solution}
+   $p = \frac{R}{q}$: the price is revenue per unit, for example the average price you received.
+   :::
+
+3. Solve the cost formula $C = F + v\,q$ for $v$.
+
+   ::: {.hidden-solution}
+   $C - F = v\,q$, so $v = \frac{C - F}{q}$ (for $q \neq 0$).
+   :::
+
+4. How much must you invest today at 4 % a year to have €10,000 in 3 years?
+
+   ::: {.hidden-solution}
+   $K_0 = \frac{10\,000}{1.04^3} = \frac{10\,000}{1.124864} \approx 8\,889.96$, so about **€8,889.96**.
+   :::
+:::
